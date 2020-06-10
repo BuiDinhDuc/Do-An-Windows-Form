@@ -1,0 +1,17 @@
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\bin\Debug\BUS.dll.config
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\bin\Debug\BUS.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\bin\Debug\BUS.pdb
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\bin\Debug\DAL.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\bin\Debug\DTO.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.SqlServer.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\bin\Debug\DAL.pdb
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\bin\Debug\DAL.dll.config
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\bin\Debug\DTO.pdb
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\bin\Debug\DTO.dll.config
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.xml
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.SqlServer.xml
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.pdb

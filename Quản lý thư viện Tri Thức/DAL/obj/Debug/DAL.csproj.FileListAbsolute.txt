@@ -1,0 +1,14 @@
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\DAL\bin\Debug\DAL.dll.config
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\DAL\bin\Debug\DAL.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\DAL\bin\Debug\DAL.pdb
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\DAL\bin\Debug\DTO.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\DAL\bin\Debug\EntityFramework.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\DAL\bin\Debug\DTO.pdb
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\DAL\bin\Debug\DTO.dll.config
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\DAL\bin\Debug\EntityFramework.xml
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.pdb

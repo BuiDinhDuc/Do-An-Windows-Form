@@ -1,0 +1,34 @@
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\Quản lý thư viện Tri Thức.exe.config
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\Quản lý thư viện Tri Thức.exe
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\Quản lý thư viện Tri Thức.pdb
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\BUS.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\DTO.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\EntityFramework.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\EntityFramework.SqlServer.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\DAL.dll
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\BUS.pdb
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\BUS.dll.config
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\DTO.pdb
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\DTO.dll.config
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\EntityFramework.xml
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\EntityFramework.SqlServer.xml
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\DAL.pdb
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\DAL.dll.config
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.csprojAssemblyReference.cache
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmAddBooks.resources
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmAddLibrarians.resources
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmAddReaders.resources
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmBooks.resources
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmBorrowBooks.resources
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmChangePassword.resources
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmHome.resources
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmLaws.resources
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmLibrarians.resources
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmLogin.resources
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmReaders.resources
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmSearchBooks.resources
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.Properties.Resources.resources
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.csproj.GenerateResource.cache
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.csproj.CopyComplete
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.exe
+D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.pdb
