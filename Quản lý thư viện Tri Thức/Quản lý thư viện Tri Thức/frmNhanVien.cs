@@ -23,7 +23,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
         private void frmLibrarians_Load(object sender, EventArgs e)
         {
             dataThuThu.AutoGenerateColumns = false;
-            dataThuThu.DataSource = nhanvienBUS.LoadDSNhanVien();
+            dataThuThu.DataSource = nhanvienBUS.LayDSNhanVien();
 
             txtMaNV.DataBindings.Add("Text", dataThuThu.DataSource, "MaNV");
             txtHoTenNV.DataBindings.Add("Text", dataThuThu.DataSource, "HoTenNV");

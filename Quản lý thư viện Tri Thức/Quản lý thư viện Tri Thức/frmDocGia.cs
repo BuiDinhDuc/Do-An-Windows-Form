@@ -23,7 +23,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
         private void frmReaders_Load(object sender, EventArgs e)
         {
             dataDocGia.AutoGenerateColumns = false;
-            dataDocGia.DataSource = docgiaBUS.LoadDSDocGia();
+            dataDocGia.DataSource = docgiaBUS.LayDSDocGia();
         }
 
         private void dataDocGia_CellClick(object sender, DataGridViewCellEventArgs e)

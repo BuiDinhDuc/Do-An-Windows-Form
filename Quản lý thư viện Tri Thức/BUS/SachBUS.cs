@@ -13,19 +13,10 @@ namespace BUS
         SachDAL sachDAL = new SachDAL();
         TheLoaiDAL theloaiDAL = new TheLoaiDAL();
         
-        public List<Sach> LoadDSSach()
+        public List<SachDTO> LayDSSach()
         {
-            List<Sach> dsS = new List<Sach>();
-
-            foreach(var i in sachDAL.getDSSach())
-            {
-                if (i.TrangThai == true)
-                {
-                    dsS.Add(i);
-                }
-                    
-            }
-            return dsS;      
+           
+            return sachDAL.LayDSSach();      
         }
 
         public void DeleteBooks(string MaSach)
@@ -33,17 +24,17 @@ namespace BUS
             sachDAL.DeleteBooks(MaSach);
         }
 
-        public Sach timSach(string MaSach)
+        public SachDTO timSach(string MaSach)
         {
             return sachDAL.timSach(MaSach);
         }
 
-        public void Editbook(Sach sach)
+        public void Editbook(SachDTO sach)
         {
             sachDAL.EditBook(sach);
         }
 
-        public List<Sach> SearchBook(string tieuchi)
+        public List<SachDTO> SearchBook(string tieuchi)
         {
             return sachDAL.SearchBook(tieuchi);
         }

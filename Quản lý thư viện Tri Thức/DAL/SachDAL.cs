@@ -8,61 +8,67 @@ namespace DAL
 {
     public class SachDAL
     {
-        ThuVienEntities data = new ThuVienEntities();
-        public List<Sach> getDSSach()
+        QuanLyThuVienEntities data = new QuanLyThuVienEntities();
+        public List<SachDTO> LayDSSach()
         {
-            List<Sach> dsSach = new List<Sach>();
-            var dsS = from c in data.Saches
-                      select c;
-
-            foreach(var i in dsS)
+            List<SachDTO> result = new List<SachDTO>();
+            result = data.Saches.Where(u => u.TrangThai.Value == true).Select(u => new SachDTO
             {
-                Sach s = new Sach();
-                s.MaSach = i.MaSach;
-                s.TenSach = i.TenSach;
-                s.MaTheLoai = i.MaTheLoai;
-                s.TenTacGia = i.TenTacGia;
-                s.TenNhaXuatBan = i.TenNhaXuatBan;                
-                s.NamXuatBan = i.NamXuatBan;
-                s.TrangThai = i.TrangThai;
-                s.SoLuong = i.SoLuong;
-                s.SachHiem = i.SachHiem;
-                s.DonGia =(int)i.DonGia;
-                dsSach.Add(s);
-            }
+                MaSach = u.MaSach,
+                TenSach = u.TenSach,
+                MaTheLoai = u.DauSach.TheLoai.TenTheLoai,
+                TenTacGia = u.TenTacGia,
+                TenNhaXuatBan = u.TenNhaXuatBan,
+                NamXuatBan = u.NamXuatBan.Value,
+                TrangThai = u.TrangThai.Value,
+                SoLuong = u.SoLuong.Value,
+                SachHiem = u.SachHiem.Value,
+                DonGia = (int)u.DonGia,
 
-            return dsSach;
+            }).ToList();
+
+           
+
+            return result;
         }
 
+        //------------------------------
        public void DeleteBooks(string MaSach)
         {
-            Sach s = (from c in data.Saches
-                      where c.MaSach == MaSach
-                     select c).SingleOrDefault();
-
+            Sach s = data.Saches.SingleOrDefault(u => u.MaSach == MaSach && u.TrangThai.Value == true);
             s.TrangThai = false;
-
             data.SaveChanges();
                     
         }
 
-        public Sach timSach(string MaSach)
+        public SachDTO timSach(string MaSach)
         {
-            Sach s = (from c in data.Saches
-                      where c.MaSach == MaSach
-                      select c).SingleOrDefault();
+            SachDTO result = new SachDTO();
+            result = data.Saches.Where(u => u.TrangThai.Value == true).Select(u => new SachDTO
+            {
+                MaSach = u.MaSach,
+                TenSach = u.TenSach,
+                MaTheLoai = u.DauSach.MaTheLoai,
+                TenTacGia = u.TenTacGia,
+                TenNhaXuatBan = u.TenNhaXuatBan,
+                NamXuatBan = u.NamXuatBan.Value,
+                TrangThai = u.TrangThai.Value,
+                SoLuong = u.SoLuong.Value,
+                SachHiem = u.SachHiem.Value,
+                DonGia = (int)u.DonGia,
+            }).SingleOrDefault();
 
-            return s;
+
+            return result;
         }
 
-        public void EditBook(Sach sach)
+        public void EditBook(SachDTO sach)
         {
-            Sach s = (from c in data.Saches
-                      where c.MaSach == sach.MaSach
-                      select c).SingleOrDefault();
+            Sach s = data.Saches.SingleOrDefault(u => u.MaSach == sach.MaSach && u.TrangThai.Value == true);
+
 
             s.TenSach = sach.TenSach;
-            s.MaTheLoai = sach.MaTheLoai;
+            s.DauSach.MaTheLoai = sach.MaTheLoai;
             s.TenTacGia = sach.TenTacGia;
             s.TenNhaXuatBan = sach.TenNhaXuatBan;
             s.NamXuatBan = sach.NamXuatBan;
@@ -74,38 +80,34 @@ namespace DAL
 
         }
 
-        public List<Sach> SearchBook(string tieuchi)
+        public List<SachDTO> SearchBook(string tieuchi)
         {
-         
-            List<Sach> ketqua = new List<Sach>();
-            var dsS = from c in data.Saches
-                      where (c.MaSach.Contains(tieuchi) ||
-                            c.TenSach.Contains(tieuchi) ||
-                            c.TheLoai.TenTheLoai.Contains(tieuchi) ||
-                            c.TenTacGia.Contains(tieuchi) ||
-                            c.TenNhaXuatBan.Contains(tieuchi)
-                            
-                           ) && c.TrangThai == true
-                          select c;
-            
-            foreach (var i in dsS)
-            {
-                Sach s = new Sach();
-                s.MaSach = i.MaSach;
-                s.TenSach = i.TenSach;
-                s.MaTheLoai = i.MaTheLoai;
-                s.TenTacGia = i.TenTacGia;
-                s.TenNhaXuatBan = i.TenNhaXuatBan;
-                s.NamXuatBan = i.NamXuatBan;
-                s.TrangThai = i.TrangThai;
-                s.SoLuong = i.SoLuong;
-                s.SachHiem = i.SachHiem;
-                s.DonGia = i.DonGia;
-                ketqua.Add(s);
-            }
 
+            List<SachDTO> ketqua = new List<SachDTO>();
+            ketqua = data.Saches.Where(c => (c.MaSach.Contains(tieuchi) ||
+                                             c.TenSach.Contains(tieuchi) ||
+                                             c.DauSach.TenDauSach.Contains(tieuchi) ||
+                                             c.DauSach.TheLoai.TenTheLoai.Contains(tieuchi) ||
+                                             c.TenTacGia.Contains(tieuchi) ||
+                                             c.TenNhaXuatBan.Contains(tieuchi)
+                                            ) && c.TrangThai.Value == true).Select(c => new SachDTO
+                                                   {
+
+                                                       MaSach = c.MaSach,
+                                                       TenSach = c.TenSach,
+                                                       MaTheLoai = c.DauSach.MaTheLoai,
+                                                       TenTacGia = c.TenTacGia,
+                                                       TenNhaXuatBan = c.TenNhaXuatBan,
+                                                       NamXuatBan = c.NamXuatBan.Value,
+                                                       TrangThai = c.TrangThai.Value,
+                                                       SoLuong = c.SoLuong.Value,
+                                                       SachHiem = c.SachHiem.Value,
+                                                       DonGia = (int)c.DonGia.Value
+                                                   }
+
+
+                                                    ).ToList();
             return ketqua;
-
         }
     }
 }

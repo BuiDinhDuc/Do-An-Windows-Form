@@ -93,6 +93,7 @@
     <Property Name="TrangThai" Type="Boolean" />
     <NavigationProperty Name="MuonSaches" Relationship="Self.fk_MuonSach_NhanVien" FromRole="NhanVien" ToRole="MuonSach" />
     <NavigationProperty Name="NhapSaches" Relationship="Self.fk_NhapSach_NhanVien" FromRole="NhanVien" ToRole="NhapSach" />
+    <Property Name="Quyen" Type="Int32" />
   </EntityType>
   <EntityType Name="NhapSach">
     <Key>
@@ -122,6 +123,8 @@
     <NavigationProperty Name="CTNhapSaches" Relationship="Self.fk_CTNhapSach_Sach" FromRole="Sach" ToRole="CTNhapSach" />
     <NavigationProperty Name="CTTraSaches" Relationship="Self.fk_CTTraSach_Sach" FromRole="Sach" ToRole="CTTraSach" />
     <NavigationProperty Name="DauSach" Relationship="Self.fk_Sach_DauSach" FromRole="Sach" ToRole="DauSach" />
+    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="SachHiem" Type="Boolean" />
   </EntityType>
   <EntityType Name="TheLoai">
     <Key>

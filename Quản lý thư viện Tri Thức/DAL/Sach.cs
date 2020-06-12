@@ -30,6 +30,8 @@ namespace DAL
         public Nullable<int> NamXuatBan { get; set; }
         public Nullable<decimal> DonGia { get; set; }
         public Nullable<bool> TrangThai { get; set; }
+        public Nullable<int> SoLuong { get; set; }
+        public Nullable<bool> SachHiem { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTMuonSach> CTMuonSaches { get; set; }

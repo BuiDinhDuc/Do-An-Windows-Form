@@ -9,31 +9,24 @@ namespace DAL
 {
     public class NhanVienDAL
     {
-        ThuVienEntities data = new ThuVienEntities();
-        public List<NhanVien> getDSNhanVien()
+        QuanLyThuVienEntities data = new QuanLyThuVienEntities();
+        public List<NhanVienDTO> LayDSNhanVien()
         {
-            List<NhanVien> dsNhanVien = new List<NhanVien>();
-
-            var dsNV = from c in data.NhanViens
-                       
-                       select c;
-
-            foreach (var i in dsNV)
+            List<NhanVienDTO> result = new List<NhanVienDTO>();
+            result = data.NhanViens.Where(u => u.TrangThai.Value == true).Select(u => new NhanVienDTO
             {
-                NhanVien nv = new NhanVien();
+                MaNV = u.MaNV,
+                HoTenNV = u.HoTenNV,
+                NgSinh = u.NgSinh.Value,
+                SDT = u.SDT,
+                TaiKhoan = u.TaiKhoan,
+                MatKhau = u.MatKhau,
+                Quyen = u.Quyen.Value
 
-                nv.MaNV = i.MaNV;
-                nv.HoTenNV = i.HoTenNV;
-                nv.NgSinh = i.NgSinh;
-                nv.SDT = i.SDT;
-                nv.MatKhau = i.MatKhau;
-                nv.TrangThai = i.TrangThai;
+            }).ToList();
 
-                dsNhanVien.Add(nv);
-            }
+            return result;
 
-
-            return dsNhanVien;
         }
     }
 }

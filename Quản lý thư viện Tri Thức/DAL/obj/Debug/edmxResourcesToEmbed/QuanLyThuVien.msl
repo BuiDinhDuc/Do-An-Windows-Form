@@ -74,6 +74,7 @@
     <EntitySetMapping Name="NhanViens">
       <EntityTypeMapping TypeName="QuanLyThuVienModel.NhanVien">
         <MappingFragment StoreEntitySet="NhanVien">
+          <ScalarProperty Name="Quyen" ColumnName="Quyen" />
           <ScalarProperty Name="MaNV" ColumnName="MaNV" />
           <ScalarProperty Name="HoTenNV" ColumnName="HoTenNV" />
           <ScalarProperty Name="NgSinh" ColumnName="NgSinh" />
@@ -98,6 +99,8 @@
     <EntitySetMapping Name="Saches">
       <EntityTypeMapping TypeName="QuanLyThuVienModel.Sach">
         <MappingFragment StoreEntitySet="Sach">
+          <ScalarProperty Name="SachHiem" ColumnName="SachHiem" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
           <ScalarProperty Name="MaSach" ColumnName="MaSach" />
           <ScalarProperty Name="TenSach" ColumnName="TenSach" />
           <ScalarProperty Name="MaDauSach" ColumnName="MaDauSach" />

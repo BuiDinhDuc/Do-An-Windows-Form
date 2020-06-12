@@ -8,25 +8,22 @@ namespace DAL
 {
     public class TheLoaiDAL
     {
-        ThuVienEntities data = new ThuVienEntities();
+        QuanLyThuVienEntities data = new QuanLyThuVienEntities();
 
-        public List<TheLoai> getDSTheLoai()
+        public List<TheLoaiDTO> LayDSTheLoai()
         {
-            List<TheLoai> dsTheLoai = new List<TheLoai>();
+            List<TheLoaiDTO> result = new List<TheLoaiDTO>();
 
-            var dstheloai = from c in data.TheLoais
-                            select c;
-
-            foreach(var i in dstheloai)
+            
+            result = data.TheLoais.Where(u => u.TrangThai.Value == true).Select(u => new TheLoaiDTO
             {
-                TheLoai tl = new TheLoai();
-                tl.MaTheLoai = i.MaTheLoai;
-                tl.TenTheLoai = i.TenTheLoai;
-                tl.TrangThai = i.TrangThai;
+               TenTheLoai = u.TenTheLoai,
+                MaTheLoai = u.MaTheLoai,
+            }).ToList();
 
-                dsTheLoai.Add(tl);
-            }
-            return dsTheLoai;
+
+
+            return result;
         }
     }
 }

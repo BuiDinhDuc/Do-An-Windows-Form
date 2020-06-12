@@ -25,17 +25,17 @@ namespace Quản_lý_thư_viện_Tri_Thức
         {
            
 
-            foreach( Sach s in sachBUS.LoadDSSach())
-            {
-                ListViewItem item = new ListViewItem();
+            //foreach( Sach s in sachBUS.LoadDSSach())
+            //{
+            //    ListViewItem item = new ListViewItem();
 
-                item.Text = s.TenSach;
-                item.SubItems.Add(s.TenTacGia);
+            //    item.Text = s.TenSach;
+            //    item.SubItems.Add(s.TenTacGia);
                 
 
-                lsvSach.Items.Add(item);
+            //    lsvSach.Items.Add(item);
               
-            }
+            //}
         }
 
         private void btnChoMuon_Click(object sender, EventArgs e)

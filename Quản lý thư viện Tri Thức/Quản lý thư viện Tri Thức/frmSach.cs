@@ -26,17 +26,16 @@ namespace Quản_lý_thư_viện_Tri_Thức
         {
             //load vao datagridview
             dataSach.AutoGenerateColumns = false;
-            dataSach.DataSource = sachBUS.LoadDSSach();
+            dataSach.DataSource = sachBUS.LayDSSach();
 
-            DataGridViewComboBoxColumn dtgvcol = (DataGridViewComboBoxColumn)MaTheLoai;
-
-
-            dtgvcol.DataSource = theloaiBUS.LoadDSTheLoai();
-            dtgvcol.DisplayMember = "TenTheLoai";
-            dtgvcol.ValueMember = "MaTheLoai";
+            //col trong dtgv
+            DataGridViewComboBoxColumn col = (DataGridViewComboBoxColumn)MaTheLoai;
+            col.DataSource = theloaiBUS.LayDSTheLoai();
+            col.DisplayMember = "TenTheLoai";
+            col.ValueMember = "MaTheLoai";
 
             //load vao combobox
-            cbbTheLoai.DataSource = theloaiBUS.LoadDSTheLoai();
+            cbbTheLoai.DataSource = theloaiBUS.LayDSTheLoai();
             cbbTheLoai.DisplayMember = "TenTheLoai";
             cbbTheLoai.ValueMember = "MaTheLoai";
         }
@@ -57,11 +56,12 @@ namespace Quản_lý_thư_viện_Tri_Thức
                 return;
             else
             {
-                Sach s = sachBUS.timSach(dataSach.Rows[vitri].Cells[0].Value.ToString());
+                SachDTO s = sachBUS.timSach(dataSach.Rows[vitri].Cells[0].Value.ToString());
                 if (s != null)
                 {
                     txtMaSach.Text = s.MaSach;
                     txtNamXuatBan.Text = s.NamXuatBan.ToString();
+                    cbbDauSach.SelectedValue = s.MaDauSach;
                     txtNhaXuatBan.Text = s.TenNhaXuatBan;
                     txtSoLuong.Text = s.SoLuong.ToString();
                     txtTacGia.Text = s.TenTacGia;
@@ -81,7 +81,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            Sach s = new Sach();
+            SachDTO s = new SachDTO();
             s.MaSach = txtMaSach.Text;
             s.TenSach = txtTenSach.Text;
             s.TenTacGia = txtTacGia.Text;

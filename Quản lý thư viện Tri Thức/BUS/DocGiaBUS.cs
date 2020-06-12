@@ -11,18 +11,9 @@ namespace BUS
     {
         DocGiaDAL docgiaDAL = new DocGiaDAL();
 
-        public List<DocGia> LoadDSDocGia()
+        public List<DocGiaDTO> LayDSDocGia()
         {
-            List<DocGia> dsSach = new List<DocGia>();
-
-            foreach(var i in docgiaDAL.getDSDocGia())
-            {
-                if (i.TrangThai == true)
-                    dsSach.Add(i);
-
-            }
-
-            return dsSach;
+            return docgiaDAL.LayDSDocGia();
         }
     }
 }

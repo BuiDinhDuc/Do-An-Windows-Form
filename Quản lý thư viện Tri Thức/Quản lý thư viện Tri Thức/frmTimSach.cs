@@ -27,17 +27,17 @@ namespace Quản_lý_thư_viện_Tri_Thức
         private void frmSearchBooks_Load(object sender, EventArgs e)
         {
             dataSach.AutoGenerateColumns = false;
-            dataSach.DataSource = sachBUS.LoadDSSach();
+            dataSach.DataSource = sachBUS.LayDSSach();
 
             //
-            cbbTheLoai.DataSource = theloaiBUS.LoadDSTheLoai();
+            cbbTheLoai.DataSource = theloaiBUS.LayDSTheLoai();
             cbbTheLoai.DisplayMember = "TenTheLoai";
             cbbTheLoai.ValueMember = "MaTheLoai";
 
             DataGridViewComboBoxColumn dtgvcol = (DataGridViewComboBoxColumn)MaTheLoai;
 
 
-            dtgvcol.DataSource = theloaiBUS.LoadDSTheLoai();
+            dtgvcol.DataSource = theloaiBUS.LayDSTheLoai();
             dtgvcol.DisplayMember = "TenTheLoai";
             dtgvcol.ValueMember = "MaTheLoai";
 
@@ -54,7 +54,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
             if (vitri >= 0)
             {
-                Sach s = sachBUS.timSach(dataSach.Rows[vitri].Cells[0].Value.ToString());
+                SachDTO s = sachBUS.timSach(dataSach.Rows[vitri].Cells[0].Value.ToString());
                 if (s != null)
                 {
 

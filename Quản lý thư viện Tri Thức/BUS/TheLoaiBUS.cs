@@ -12,9 +12,9 @@ namespace BUS
     {
         TheLoaiDAL theloaiDAL = new TheLoaiDAL();
 
-        public List<TheLoai> LoadDSTheLoai()
+        public List<TheLoaiDTO> LayDSTheLoai()
         {
-            return theloaiDAL.getDSTheLoai();
+            return theloaiDAL.LayDSTheLoai();
         }
     }
 }

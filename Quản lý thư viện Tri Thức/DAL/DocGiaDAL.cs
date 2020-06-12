@@ -10,26 +10,20 @@ namespace DAL
     public class DocGiaDAL
     {
         QuanLyThuVienEntities data = new QuanLyThuVienEntities();
-        public List<DocGia> getDSDocGia()
+        public List<DocGiaDTO> LayDSDocGia()
         {
-            List<DocGia> dsDocGia = new List<DocGia>();
+            List<DocGiaDTO> dsDocGia = new List<DocGiaDTO>();
 
-            var dsDG = from c in data.DocGias
-                       select c;
-
-            foreach(var i in dsDG)
+            dsDocGia = data.DocGias.Where(u => u.TrangThai.Value == true).Select(u => new DocGiaDTO
             {
-                DocGia dg = new DocGia();
 
-                dg.MaDocGia = i.MaDocGia;
-                dg.TenDocGia = i.TenDocGia;
-                dg.CMND = i.CMND;
-                dg.DiaChi = i.DiaChi;
-                dg.SoThe = i.SoThe;
-                dg.TrangThai = i.TrangThai;
+                MaDocGia = u.MaDocGia,
+                TenDocGia = u.TenDocGia,
+                CMND = u.CMND,
+                DiaChi = u.DiaChi,
+                SoThe = u.SoThe,
 
-                dsDocGia.Add(dg);
-            }
+            }).ToList();
 
             return dsDocGia;
         }

@@ -15,35 +15,24 @@ namespace BUS
 
         public bool KtraDangNhap(string username,string password, ref string NameofUser,ref int PhanQuyen)
         {
-            List<NhanVien> dsNhanVien = new List<NhanVien>();
-            dsNhanVien = nhanvienDAL.getDSNhanVien();
+            List<NhanVienDTO> dsNhanVien = new List<NhanVienDTO>();
+            dsNhanVien = nhanvienDAL.LayDSNhanVien();
 
-            foreach(var i in dsNhanVien)
+            foreach(NhanVienDTO i in dsNhanVien)
             {
-                if (i.MaNV == username && i.MatKhau == GetMD5(password) && i.TrangThai == true)
+                if (i.TaiKhoan == username && i.MatKhau == GetMD5(password) && i.TrangThai == true)
                 {
                     NameofUser = i.HoTenNV;
-
-                    if (i.MaNV.Contains("NV")) PhanQuyen = 0;
-                    else if (i.MaNV.Contains("QL")) PhanQuyen = 1;
-
+                    PhanQuyen = i.Quyen;
                     return true;
                 }
 
             }
             return false;
         }
-        public List<NhanVien> LoadDSNhanVien()
+        public List<NhanVienDTO> LayDSNhanVien()
         {
-            List<NhanVien> dsNhanVien = new List<NhanVien>();
-            
-            foreach (var i in nhanvienDAL.getDSNhanVien())
-            {
-                if (Boolean.Parse(i.TrangThai.Value.ToString()))
-                    dsNhanVien.Add(i);
-
-            }
-            return dsNhanVien;
+            return nhanvienDAL.LayDSNhanVien();
         }
 
         public String GetMD5(string MatKhau)
