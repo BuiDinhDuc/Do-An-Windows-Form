@@ -15,3 +15,6 @@ D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.csprojA
 D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.dll
 D:\Đồ án Winform\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.pdb
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.dll
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.pdb

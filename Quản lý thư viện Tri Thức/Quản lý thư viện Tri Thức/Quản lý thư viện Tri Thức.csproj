@@ -57,115 +57,115 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constrant.cs" />
-    <Compile Include="frmAddBooks.cs">
+    <Compile Include="frmNhapSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddBooks.Designer.cs">
-      <DependentUpon>frmAddBooks.cs</DependentUpon>
+    <Compile Include="frmNhapSach.Designer.cs">
+      <DependentUpon>frmNhapSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddLibrarians.cs">
+    <Compile Include="frmThemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddLibrarians.Designer.cs">
-      <DependentUpon>frmAddLibrarians.cs</DependentUpon>
+    <Compile Include="frmThemNhanVien.Designer.cs">
+      <DependentUpon>frmThemNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddReaders.cs">
+    <Compile Include="frmThemDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddReaders.Designer.cs">
-      <DependentUpon>frmAddReaders.cs</DependentUpon>
+    <Compile Include="frmThemDocGia.Designer.cs">
+      <DependentUpon>frmThemDocGia.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBooks.cs">
+    <Compile Include="frmSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBooks.Designer.cs">
-      <DependentUpon>frmBooks.cs</DependentUpon>
+    <Compile Include="frmSach.Designer.cs">
+      <DependentUpon>frmSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBorrowBooks.cs">
+    <Compile Include="frmMuonSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBorrowBooks.Designer.cs">
-      <DependentUpon>frmBorrowBooks.cs</DependentUpon>
+    <Compile Include="frmMuonSach.Designer.cs">
+      <DependentUpon>frmMuonSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmChangePassword.cs">
+    <Compile Include="frmDoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmChangePassword.Designer.cs">
-      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    <Compile Include="frmDoiMatKhau.Designer.cs">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHome.cs">
+    <Compile Include="frmTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHome.Designer.cs">
-      <DependentUpon>frmHome.cs</DependentUpon>
+    <Compile Include="frmTrangChu.Designer.cs">
+      <DependentUpon>frmTrangChu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLaws.cs">
+    <Compile Include="frmQuyDinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLaws.Designer.cs">
-      <DependentUpon>frmLaws.cs</DependentUpon>
+    <Compile Include="frmQuyDinh.Designer.cs">
+      <DependentUpon>frmQuyDinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLibrarians.cs">
+    <Compile Include="frmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLibrarians.Designer.cs">
-      <DependentUpon>frmLibrarians.cs</DependentUpon>
+    <Compile Include="frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <Compile Include="frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmReaders.cs">
+    <Compile Include="frmDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmReaders.Designer.cs">
-      <DependentUpon>frmReaders.cs</DependentUpon>
+    <Compile Include="frmDocGia.Designer.cs">
+      <DependentUpon>frmDocGia.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSearchBooks.cs">
+    <Compile Include="frmTimSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSearchBooks.Designer.cs">
-      <DependentUpon>frmSearchBooks.cs</DependentUpon>
+    <Compile Include="frmTimSach.Designer.cs">
+      <DependentUpon>frmTimSach.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAddBooks.resx">
-      <DependentUpon>frmAddBooks.cs</DependentUpon>
+    <EmbeddedResource Include="frmNhapSach.resx">
+      <DependentUpon>frmNhapSach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddLibrarians.resx">
-      <DependentUpon>frmAddLibrarians.cs</DependentUpon>
+    <EmbeddedResource Include="frmThemNhanVien.resx">
+      <DependentUpon>frmThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddReaders.resx">
-      <DependentUpon>frmAddReaders.cs</DependentUpon>
+    <EmbeddedResource Include="frmThemDocGia.resx">
+      <DependentUpon>frmThemDocGia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBooks.resx">
-      <DependentUpon>frmBooks.cs</DependentUpon>
+    <EmbeddedResource Include="frmSach.resx">
+      <DependentUpon>frmSach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBorrowBooks.resx">
-      <DependentUpon>frmBorrowBooks.cs</DependentUpon>
+    <EmbeddedResource Include="frmMuonSach.resx">
+      <DependentUpon>frmMuonSach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmChangePassword.resx">
-      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    <EmbeddedResource Include="frmDoiMatKhau.resx">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmHome.resx">
-      <DependentUpon>frmHome.cs</DependentUpon>
+    <EmbeddedResource Include="frmTrangChu.resx">
+      <DependentUpon>frmTrangChu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLaws.resx">
-      <DependentUpon>frmLaws.cs</DependentUpon>
+    <EmbeddedResource Include="frmQuyDinh.resx">
+      <DependentUpon>frmQuyDinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLibrarians.resx">
-      <DependentUpon>frmLibrarians.cs</DependentUpon>
+    <EmbeddedResource Include="frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmReaders.resx">
-      <DependentUpon>frmReaders.cs</DependentUpon>
+    <EmbeddedResource Include="frmDocGia.resx">
+      <DependentUpon>frmDocGia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSearchBooks.resx">
-      <DependentUpon>frmSearchBooks.cs</DependentUpon>
+    <EmbeddedResource Include="frmTimSach.resx">
+      <DependentUpon>frmTimSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

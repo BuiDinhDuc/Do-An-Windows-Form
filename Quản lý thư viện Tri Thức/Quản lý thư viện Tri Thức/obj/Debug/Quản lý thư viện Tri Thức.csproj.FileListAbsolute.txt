@@ -32,3 +32,32 @@ D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tr
 D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.csproj.CopyComplete
 D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.exe
 D:\Đồ án Winform\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.pdb
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.csprojAssemblyReference.cache
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmAddBooks.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmAddLibrarians.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmAddReaders.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmBooks.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmBorrowBooks.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmChangePassword.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmHome.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmLaws.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmLibrarians.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmLogin.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmReaders.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmSearchBooks.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.Properties.Resources.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.csproj.GenerateResource.cache
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.exe
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.pdb
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmNhapSach.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmThemNhanVien.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmThemDocGia.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmSach.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmMuonSach.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmDoiMatKhau.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmTrangChu.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmQuyDinh.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmNhanVien.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmDangNhap.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmDocGia.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmTimSach.resources

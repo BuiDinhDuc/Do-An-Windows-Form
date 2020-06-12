@@ -53,15 +53,73 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CTMuonSach.cs">
+      <DependentUpon>QuanLyThuVien.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTNhapSach.cs">
+      <DependentUpon>QuanLyThuVien.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTTraSach.cs">
+      <DependentUpon>QuanLyThuVien.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DauSach.cs">
+      <DependentUpon>QuanLyThuVien.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocGia.cs">
+      <DependentUpon>QuanLyThuVien.tt</DependentUpon>
+    </Compile>
     <Compile Include="DocGiaDAL.cs" />
+    <Compile Include="MuonSach.cs">
+      <DependentUpon>QuanLyThuVien.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs">
+      <DependentUpon>QuanLyThuVien.tt</DependentUpon>
+    </Compile>
     <Compile Include="NhanVienDAL.cs" />
+    <Compile Include="NhapSach.cs">
+      <DependentUpon>QuanLyThuVien.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyThuVien.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyThuVien.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyThuVien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyThuVien.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyThuVien.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyThuVien.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Sach.cs">
+      <DependentUpon>QuanLyThuVien.tt</DependentUpon>
+    </Compile>
     <Compile Include="SachDAL.cs" />
+    <Compile Include="TheLoai.cs">
+      <DependentUpon>QuanLyThuVien.tt</DependentUpon>
+    </Compile>
     <Compile Include="TheLoaiDAL.cs" />
+    <Compile Include="TheThuVien.cs">
+      <DependentUpon>QuanLyThuVien.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TraSach.cs">
+      <DependentUpon>QuanLyThuVien.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <EntityDeploy Include="QuanLyThuVien.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QuanLyThuVien.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="QuanLyThuVien.edmx.diagram">
+      <DependentUpon>QuanLyThuVien.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -71,6 +129,18 @@
       <Project>{1317cea1-519b-4dc3-838d-e345f9e1a79c}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QuanLyThuVien.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanLyThuVien.edmx</DependentUpon>
+      <LastGenOutput>QuanLyThuVien.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="QuanLyThuVien.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanLyThuVien.edmx</DependentUpon>
+      <LastGenOutput>QuanLyThuVien.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

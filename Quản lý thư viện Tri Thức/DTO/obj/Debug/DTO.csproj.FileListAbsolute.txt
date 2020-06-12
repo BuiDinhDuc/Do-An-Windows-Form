@@ -9,3 +9,14 @@ D:\Đồ án Winform\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.csprojA
 D:\Đồ án Winform\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.csproj.CopyComplete
 D:\Đồ án Winform\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.dll
 D:\Đồ án Winform\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.pdb
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\bin\Debug\DTO.dll.config
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\bin\Debug\DTO.dll
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\bin\Debug\DTO.pdb
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\bin\Debug\EntityFramework.dll
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\bin\Debug\EntityFramework.SqlServer.dll
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\bin\Debug\EntityFramework.xml
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\bin\Debug\EntityFramework.SqlServer.xml
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.dll
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.pdb

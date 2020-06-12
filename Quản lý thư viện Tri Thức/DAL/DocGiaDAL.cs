@@ -9,7 +9,7 @@ namespace DAL
 {
     public class DocGiaDAL
     {
-        ThuVienEntities data = new ThuVienEntities();
+        QuanLyThuVienEntities data = new QuanLyThuVienEntities();
         public List<DocGia> getDSDocGia()
         {
             List<DocGia> dsDocGia = new List<DocGia>();
