@@ -209,9 +209,9 @@
             // 
             // lblTime
             // 
-            this.lblTime.Location = new System.Drawing.Point(1050, 636);
+            this.lblTime.Location = new System.Drawing.Point(1050, 635);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(124, 27);
+            this.lblTime.Size = new System.Drawing.Size(125, 28);
             this.lblTime.TabIndex = 13;
             // 
             // frmTrangChu

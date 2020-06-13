@@ -15,5 +15,10 @@ namespace BUS
         {
             return dausachDAL.LayDSDauSach();
         }
+
+        public string timTheLoai(string MaDauSach)
+        {
+            return dausachDAL.timTheLoai(MaDauSach);
+        }
     }
 }

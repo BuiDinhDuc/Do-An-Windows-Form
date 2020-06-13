@@ -16,5 +16,15 @@ namespace BUS
         {
             return theloaiDAL.LayDSTheLoai();
         }
+
+        public TheLoaiDTO timTheLoai(string MaTheLoai)
+        {
+            return theloaiDAL.timTheLoai(MaTheLoai);
+        }
+
+        public TheLoaiDTO timTheLoaitheoten(string TenTheLoai)
+        {
+            return theloaiDAL.timTheLoaitheoten(TenTheLoai);
+        }
     }
 }

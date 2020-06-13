@@ -25,5 +25,31 @@ namespace DAL
 
             return result;
         }
+
+        public TheLoaiDTO timTheLoai(string MaTheLoai)
+        {
+            TheLoaiDTO theLoaiDTO = new TheLoaiDTO();
+
+            TheLoai tl = data.TheLoais.SingleOrDefault(u => u.MaTheLoai == MaTheLoai);
+            theLoaiDTO.MaTheLoai = tl.MaTheLoai;
+            theLoaiDTO.TenTheLoai = tl.TenTheLoai;
+            theLoaiDTO.TrangThai = tl.TrangThai.Value;
+
+            return theLoaiDTO;
+
+        }
+
+        public TheLoaiDTO timTheLoaitheoten(string TenTheLoai)
+        {
+            TheLoaiDTO theLoaiDTO = new TheLoaiDTO();
+
+            TheLoai tl = data.TheLoais.SingleOrDefault(u => u.TenTheLoai == TenTheLoai);
+            theLoaiDTO.MaTheLoai = tl.MaTheLoai;
+            theLoaiDTO.TenTheLoai = tl.TenTheLoai;
+            theLoaiDTO.TrangThai = tl.TrangThai.Value;
+
+            return theLoaiDTO;
+
+        }
     }
 }

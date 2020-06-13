@@ -28,21 +28,12 @@ namespace Quản_lý_thư_viện_Tri_Thức
             dataSach.AutoGenerateColumns = false;
             dataSach.DataSource = sachBUS.LayDSSach();
 
-            //col trong dtgv
-            DataGridViewComboBoxColumn col = (DataGridViewComboBoxColumn)MaTheLoai;
-            col.DataSource = theloaiBUS.LayDSTheLoai();
-            col.DisplayMember = "TenTheLoai";
-            col.ValueMember = "MaTheLoai";
-
-            //load vao combobox
-            cbbTheLoai.DataSource = theloaiBUS.LayDSTheLoai();
-            cbbTheLoai.DisplayMember = "TenTheLoai";
-            cbbTheLoai.ValueMember = "MaTheLoai";
-
             //load vao combobox Dau Sach
             cbbDauSach.DataSource = dausachBUS.LayDSDauSach();
             cbbDauSach.DisplayMember = "TenDauSach";
             cbbDauSach.ValueMember = "MaDauSach";
+
+            cbbDauSach.SelectedIndex = 0;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -71,9 +62,9 @@ namespace Quản_lý_thư_viện_Tri_Thức
                     txtSoLuong.Text = s.SoLuong.ToString();
                     txtTacGia.Text = s.TenTacGia;
                     txtTenSach.Text = s.TenSach;
-                    cbbTheLoai.SelectedValue = s.MaTheLoai;
+                    txtTheLoai.Text = theloaiBUS.timTheLoai(s.MaTheLoai).TenTheLoai;
                     txtGiaTien.Text = ((int)s.DonGia).ToString();
-                    if (s.SachHiem == true)
+                    if (s.SachHiem)
                     {
                         chkSachHiem.Checked = true;
                     }
@@ -89,13 +80,14 @@ namespace Quản_lý_thư_viện_Tri_Thức
             SachDTO s = new SachDTO();
             s.MaSach = txtMaSach.Text;
             s.TenSach = txtTenSach.Text;
+            s.MaDauSach = cbbDauSach.SelectedValue.ToString();
             s.TenTacGia = txtTacGia.Text;
-            s.MaTheLoai = cbbTheLoai.SelectedValue.ToString();
+            s.MaTheLoai = cbbDauSach.SelectedValue.ToString();
             s.TenNhaXuatBan = txtNhaXuatBan.Text;
             s.NamXuatBan = Int32.Parse(txtNamXuatBan.Text);
             s.SoLuong = Convert.ToInt32( txtSoLuong.Text);
             s.DonGia = Convert.ToDecimal(txtGiaTien.Text);
-
+            s.SachHiem = chkSachHiem.Checked ? true : false;
             sachBUS.Editbook(s);
             MessageBox.Show(Constrant.SuaThanhCong,Constrant.ThongBao,MessageBoxButtons.OK,MessageBoxIcon.Information);
             frmBooks_Load(sender, e);
@@ -110,7 +102,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
             txtSoLuong.Text = string.Empty;
             txtTacGia.Text = string.Empty;
             txtTenSach.Text = string.Empty;
-            cbbTheLoai.SelectedItem = cbbTheLoai.Items[0];
+            
             chkSachHiem.Checked = false;
 
         }
@@ -128,5 +120,6 @@ namespace Quản_lý_thư_viện_Tri_Thức
         {
             this.Close();
         }
+
     }
 }

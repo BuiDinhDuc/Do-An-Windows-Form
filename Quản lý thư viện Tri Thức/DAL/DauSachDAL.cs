@@ -23,5 +23,11 @@ namespace DAL
 
             return result;
         }
+
+        public string timTheLoai(string MaDauSach)
+        {
+            DauSach dauSach = data.DauSaches.SingleOrDefault(u => u.MaDauSach == MaDauSach && u.TrangThai == true);
+            return dauSach.MaTheLoai;
+        }
     }
 }
