@@ -26,5 +26,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         public static string SuaThatBai = "Sửa thất bại";
 
+        public static string MatKhauTrungNhau = "Mật khẩu và mật khẩu xác nhận không trùng nhau";
+
     }
 }

@@ -57,9 +57,39 @@ namespace BUS
             return nhanvienDAL.timNhanVien(MaNV);
         }
 
-        public bool  xoaNhanVien(string MaNV)
+        public bool xoaNhanVien(string MaNV)
         {
             return nhanvienDAL.xoaNhanVien(MaNV);
+        }
+
+        public bool suaNhanVien(NhanVienDTO nhanVienDTO)
+        {
+            return nhanvienDAL.suaNhanVien(nhanVienDTO);
+        }
+
+        public string phatsinhma()
+        {
+           string so =  nhanvienDAL.PhatSinhSo().ToString();
+            int idem = 0;
+            string MaNV = "NV";
+            foreach( char i in so)
+            {
+                idem++;
+            }
+
+            for(int i = 0; i< 8-idem;i++)
+            {
+                MaNV += "0";
+            }
+
+            MaNV += so;
+
+            return MaNV;
+        }
+
+        public bool themNhanVien(NhanVienDTO nhanVien)
+        {
+            return nhanvienDAL.themNhanVien(nhanVien);
         }
     }
 }

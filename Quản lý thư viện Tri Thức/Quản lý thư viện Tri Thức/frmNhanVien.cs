@@ -68,5 +68,27 @@ namespace Quản_lý_thư_viện_Tri_Thức
                 MessageBox.Show(Constrant.XoaThatBai, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Error);
             frmLibrarians_Load(sender, e);
         }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            NhanVienDTO nv = nhanvienBUS.timNhanVien(txtMaNV.Text);
+            nv.HoTenNV = txtHoTenNV.Text;
+            nv.NgSinh = dtmNgSinh.Value;
+            nv.SDT = txtSDT.Text;
+
+
+            if (nhanvienBUS.suaNhanVien(nv))
+                MessageBox.Show(Constrant.SuaThanhCong, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show(Constrant.SuaThatBai, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            frmLibrarians_Load(sender, e);
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            frmThemNhanVien fThemNV = new frmThemNhanVien();
+            fThemNV.ShowDialog();
+            frmLibrarians_Load(sender,e);
+        }
     }
 }

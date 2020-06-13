@@ -42,36 +42,42 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtMaNV = new System.Windows.Forms.TextBox();
             this.lblMaNV = new System.Windows.Forms.Label();
+            this.txtTaiKhoan = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.rdoThuThu = new System.Windows.Forms.RadioButton();
+            this.rdoQuanLy = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // dtmNgSinh
             // 
-            this.dtmNgSinh.Location = new System.Drawing.Point(251, 119);
+            this.dtmNgSinh.Location = new System.Drawing.Point(251, 120);
             this.dtmNgSinh.Name = "dtmNgSinh";
             this.dtmNgSinh.Size = new System.Drawing.Size(200, 23);
             this.dtmNgSinh.TabIndex = 2;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(377, 285);
+            this.btnCancel.Location = new System.Drawing.Point(377, 372);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(74, 37);
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnXacNhan
             // 
-            this.btnXacNhan.Location = new System.Drawing.Point(251, 285);
+            this.btnXacNhan.Location = new System.Drawing.Point(251, 372);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(111, 37);
             this.btnXacNhan.TabIndex = 6;
             this.btnXacNhan.Text = "OK";
             this.btnXacNhan.UseVisualStyleBackColor = true;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // txtRePass
             // 
-            this.txtRePass.Location = new System.Drawing.Point(251, 232);
+            this.txtRePass.Location = new System.Drawing.Point(251, 280);
             this.txtRePass.Name = "txtRePass";
             this.txtRePass.Size = new System.Drawing.Size(200, 23);
             this.txtRePass.TabIndex = 5;
@@ -79,7 +85,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(129, 235);
+            this.label6.Location = new System.Drawing.Point(129, 283);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 17);
             this.label6.TabIndex = 0;
@@ -87,7 +93,7 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(251, 195);
+            this.txtPass.Location = new System.Drawing.Point(251, 240);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(200, 23);
             this.txtPass.TabIndex = 4;
@@ -95,7 +101,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(129, 198);
+            this.label5.Location = new System.Drawing.Point(129, 243);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 17);
             this.label5.TabIndex = 0;
@@ -103,7 +109,7 @@
             // 
             // txtSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(251, 157);
+            this.txtSDT.Location = new System.Drawing.Point(251, 160);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(200, 23);
             this.txtSDT.TabIndex = 3;
@@ -111,7 +117,7 @@
             // lblSDT
             // 
             this.lblSDT.AutoSize = true;
-            this.lblSDT.Location = new System.Drawing.Point(129, 160);
+            this.lblSDT.Location = new System.Drawing.Point(129, 163);
             this.lblSDT.Name = "lblSDT";
             this.lblSDT.Size = new System.Drawing.Size(91, 17);
             this.lblSDT.TabIndex = 0;
@@ -120,7 +126,7 @@
             // lblNgSinh
             // 
             this.lblNgSinh.AutoSize = true;
-            this.lblNgSinh.Location = new System.Drawing.Point(129, 122);
+            this.lblNgSinh.Location = new System.Drawing.Point(129, 125);
             this.lblNgSinh.Name = "lblNgSinh";
             this.lblNgSinh.Size = new System.Drawing.Size(71, 17);
             this.lblNgSinh.TabIndex = 0;
@@ -128,7 +134,7 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(251, 76);
+            this.txtHoTen.Location = new System.Drawing.Point(251, 80);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(200, 23);
             this.txtHoTen.TabIndex = 1;
@@ -136,7 +142,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(129, 79);
+            this.label2.Location = new System.Drawing.Point(129, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 17);
             this.label2.TabIndex = 0;
@@ -144,7 +150,7 @@
             // 
             // txtMaNV
             // 
-            this.txtMaNV.Location = new System.Drawing.Point(251, 38);
+            this.txtMaNV.Location = new System.Drawing.Point(251, 40);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.ReadOnly = true;
             this.txtMaNV.Size = new System.Drawing.Size(200, 23);
@@ -153,18 +159,61 @@
             // lblMaNV
             // 
             this.lblMaNV.AutoSize = true;
-            this.lblMaNV.Location = new System.Drawing.Point(129, 41);
+            this.lblMaNV.Location = new System.Drawing.Point(129, 43);
             this.lblMaNV.Name = "lblMaNV";
             this.lblMaNV.Size = new System.Drawing.Size(75, 17);
             this.lblMaNV.TabIndex = 0;
             this.lblMaNV.Text = "Mã thủ thư";
             // 
-            // frmAddLibrarians
+            // txtTaiKhoan
+            // 
+            this.txtTaiKhoan.Location = new System.Drawing.Point(251, 200);
+            this.txtTaiKhoan.Name = "txtTaiKhoan";
+            this.txtTaiKhoan.Size = new System.Drawing.Size(200, 23);
+            this.txtTaiKhoan.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(129, 203);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 17);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Tài khoản";
+            // 
+            // rdoThuThu
+            // 
+            this.rdoThuThu.AutoSize = true;
+            this.rdoThuThu.Location = new System.Drawing.Point(251, 325);
+            this.rdoThuThu.Name = "rdoThuThu";
+            this.rdoThuThu.Size = new System.Drawing.Size(75, 21);
+            this.rdoThuThu.TabIndex = 10;
+            this.rdoThuThu.TabStop = true;
+            this.rdoThuThu.Text = "Thủ thư";
+            this.rdoThuThu.UseVisualStyleBackColor = true;
+            // 
+            // rdoQuanLy
+            // 
+            this.rdoQuanLy.AutoSize = true;
+            this.rdoQuanLy.Location = new System.Drawing.Point(376, 325);
+            this.rdoQuanLy.Name = "rdoQuanLy";
+            this.rdoQuanLy.Size = new System.Drawing.Size(75, 21);
+            this.rdoQuanLy.TabIndex = 11;
+            this.rdoQuanLy.TabStop = true;
+            this.rdoQuanLy.Text = "Quản lý";
+            this.rdoQuanLy.UseVisualStyleBackColor = true;
+            // 
+            // frmThemNhanVien
             // 
             this.AcceptButton = this.btnXacNhan;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 400);
+            this.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.ClientSize = new System.Drawing.Size(600, 460);
+            this.Controls.Add(this.rdoQuanLy);
+            this.Controls.Add(this.rdoThuThu);
+            this.Controls.Add(this.txtTaiKhoan);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dtmNgSinh);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnXacNhan);
@@ -182,9 +231,10 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmAddLibrarians";
+            this.Name = "frmThemNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add Librarians";
+            this.Text = "Thêm nhân viên";
+            this.Load += new System.EventHandler(this.frmThemNhanVien_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,5 +256,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.Label lblMaNV;
+        private System.Windows.Forms.TextBox txtTaiKhoan;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton rdoThuThu;
+        private System.Windows.Forms.RadioButton rdoQuanLy;
     }
 }

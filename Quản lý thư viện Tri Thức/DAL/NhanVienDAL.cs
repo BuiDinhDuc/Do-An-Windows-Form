@@ -59,5 +59,51 @@ namespace DAL
                 return false;
             }
         }
+
+        public bool suaNhanVien(NhanVienDTO nhanvienDTO)
+        {
+            try
+            {
+                NhanVien nhanvien = data.NhanViens.SingleOrDefault(u => u.MaNV == nhanvienDTO.MaNV && u.TrangThai == true);
+                nhanvien.HoTenNV = nhanvienDTO.HoTenNV;
+                nhanvien.NgSinh = nhanvienDTO.NgSinh;
+                nhanvien.SDT = nhanvienDTO.SDT;
+                data.SaveChanges();
+                return true;
+            } catch(Exception)
+            {
+                return false;
+            }
+        }
+
+        public bool themNhanVien(NhanVienDTO nv)
+        {
+            try
+            {
+                NhanVien nhanvien = new NhanVien();
+                nhanvien.MaNV = nv.MaNV;
+                nhanvien.HoTenNV = nv.HoTenNV;
+                nhanvien.NgSinh = nv.NgSinh;
+                nhanvien.SDT = nv.SDT;
+                nhanvien.TaiKhoan = nv.TaiKhoan;
+                nhanvien.MatKhau = nv.MatKhau;
+                nhanvien.Quyen = nv.Quyen;
+                nhanvien.TrangThai = true;
+
+                data.NhanViens.Add(nhanvien);
+                data.SaveChanges();
+
+                return true;
+            }
+            catch(Exception)
+            {
+                return false;
+            }
+        }
+
+        public int PhatSinhSo()
+        {
+            return data.NhanViens.Count() + 1;
+        }
     }
 }

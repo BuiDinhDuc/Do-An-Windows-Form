@@ -42,12 +42,12 @@
             this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpChiTiet = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataThuThu)).BeginInit();
             this.grpChiTiet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -129,6 +129,7 @@
             this.SDT});
             this.dataThuThu.Location = new System.Drawing.Point(0, 192);
             this.dataThuThu.Name = "dataThuThu";
+            this.dataThuThu.ReadOnly = true;
             this.dataThuThu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataThuThu.Size = new System.Drawing.Size(750, 357);
             this.dataThuThu.TabIndex = 13;
@@ -139,24 +140,28 @@
             this.MaNV.DataPropertyName = "MaNV";
             this.MaNV.HeaderText = "Mã Nhân Viên";
             this.MaNV.Name = "MaNV";
+            this.MaNV.ReadOnly = true;
             // 
             // HoTenNV
             // 
             this.HoTenNV.DataPropertyName = "HoTenNV";
             this.HoTenNV.HeaderText = "Họ Tên Nhân Viên";
             this.HoTenNV.Name = "HoTenNV";
+            this.HoTenNV.ReadOnly = true;
             // 
             // NgaySinh
             // 
             this.NgaySinh.DataPropertyName = "NgSinh";
             this.NgaySinh.HeaderText = "Ngày Sinh";
             this.NgaySinh.Name = "NgaySinh";
+            this.NgaySinh.ReadOnly = true;
             // 
             // SDT
             // 
             this.SDT.DataPropertyName = "SDT";
             this.SDT.HeaderText = "Số Điện Thoại";
             this.SDT.Name = "SDT";
+            this.SDT.ReadOnly = true;
             // 
             // grpChiTiet
             // 
@@ -179,27 +184,6 @@
             this.grpChiTiet.TabStop = false;
             this.grpChiTiet.Text = "Thông tin chi tiết";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(326, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(461, 63);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "Quản lý nhân viên";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Quản_lý_thư_viện_Tri_Thức.Properties.Resources.Edit;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(113, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 155);
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnLamMoi
             // 
             this.btnLamMoi.BackgroundImage = global::Quản_lý_thư_viện_Tri_Thức.Properties.Resources.For_NH;
@@ -220,6 +204,7 @@
             this.btnThem.Size = new System.Drawing.Size(76, 53);
             this.btnThem.TabIndex = 22;
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
@@ -241,6 +226,28 @@
             this.btnSua.Size = new System.Drawing.Size(76, 53);
             this.btnSua.TabIndex = 24;
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(326, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(461, 63);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Quản lý nhân viên";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Quản_lý_thư_viện_Tri_Thức.Properties.Resources.Edit;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(113, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(189, 155);
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
             // 
             // frmNhanVien
             // 
