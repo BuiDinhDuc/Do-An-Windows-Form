@@ -20,7 +20,7 @@ namespace BUS
 
             foreach(NhanVienDTO i in dsNhanVien)
             {
-                if (i.TaiKhoan == username && i.MatKhau == GetMD5(password) && i.TrangThai == true)
+                if (i.TaiKhoan == username && i.MatKhau == GetMD5(password))
                 {
                     NameofUser = i.HoTenNV;
                     PhanQuyen = i.Quyen;

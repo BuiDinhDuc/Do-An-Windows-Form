@@ -16,7 +16,7 @@ namespace DAL
             {
                 MaSach = u.MaSach,
                 TenSach = u.TenSach,
-                MaTheLoai = u.DauSach.TheLoai.TenTheLoai,
+                MaTheLoai = u.DauSach.MaTheLoai,
                 TenTacGia = u.TenTacGia,
                 TenNhaXuatBan = u.TenNhaXuatBan,
                 NamXuatBan = u.NamXuatBan.Value,

@@ -290,12 +290,12 @@
             this.TenTacGia,
             this.SoLuong});
             this.dataSach.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataSach.Location = new System.Drawing.Point(-1, 191);
+            this.dataSach.Location = new System.Drawing.Point(-1, 149);
             this.dataSach.Margin = new System.Windows.Forms.Padding(4);
             this.dataSach.Name = "dataSach";
             this.dataSach.ReadOnly = true;
             this.dataSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataSach.Size = new System.Drawing.Size(750, 357);
+            this.dataSach.Size = new System.Drawing.Size(750, 399);
             this.dataSach.TabIndex = 0;
             this.dataSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataSach_CellClick);
             // 
@@ -370,9 +370,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Quản_lý_thư_viện_Tri_Thức.Properties.Resources.Edit1;
-            this.pictureBox1.Location = new System.Drawing.Point(127, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(173, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(141, 131);
+            this.pictureBox1.Size = new System.Drawing.Size(141, 121);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
