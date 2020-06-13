@@ -16,7 +16,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
     {
         SachBUS sachBUS = new SachBUS();
         TheLoaiBUS theloaiBUS = new TheLoaiBUS();
-       
+        DauSachBUS dausachBUS = new DauSachBUS();
         public frmSach()
         {
             InitializeComponent();
@@ -38,6 +38,11 @@ namespace Quản_lý_thư_viện_Tri_Thức
             cbbTheLoai.DataSource = theloaiBUS.LayDSTheLoai();
             cbbTheLoai.DisplayMember = "TenTheLoai";
             cbbTheLoai.ValueMember = "MaTheLoai";
+
+            //load vao combobox Dau Sach
+            cbbDauSach.DataSource = dausachBUS.LayDSDauSach();
+            cbbDauSach.DisplayMember = "TenDauSach";
+            cbbDauSach.ValueMember = "MaDauSach";
         }
 
         private void btnXoa_Click(object sender, EventArgs e)

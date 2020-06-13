@@ -16,6 +16,7 @@ namespace DAL
             {
                 MaSach = u.MaSach,
                 TenSach = u.TenSach,
+                MaDauSach = u.MaDauSach,
                 MaTheLoai = u.DauSach.MaTheLoai,
                 TenTacGia = u.TenTacGia,
                 TenNhaXuatBan = u.TenNhaXuatBan,
@@ -44,10 +45,11 @@ namespace DAL
         public SachDTO timSach(string MaSach)
         {
             SachDTO result = new SachDTO();
-            result = data.Saches.Where(u => u.TrangThai.Value == true).Select(u => new SachDTO
+            result = data.Saches.Where( u =>u.MaSach == MaSach && u.TrangThai.Value == true).Select(u => new SachDTO
             {
                 MaSach = u.MaSach,
                 TenSach = u.TenSach,
+                MaDauSach = u.MaDauSach,
                 MaTheLoai = u.DauSach.MaTheLoai,
                 TenTacGia = u.TenTacGia,
                 TenNhaXuatBan = u.TenNhaXuatBan,
@@ -68,7 +70,7 @@ namespace DAL
 
 
             s.TenSach = sach.TenSach;
-            s.DauSach.MaTheLoai = sach.MaTheLoai;
+            s.MaDauSach = sach.MaDauSach;          
             s.TenTacGia = sach.TenTacGia;
             s.TenNhaXuatBan = sach.TenNhaXuatBan;
             s.NamXuatBan = sach.NamXuatBan;
@@ -84,16 +86,17 @@ namespace DAL
         {
 
             List<SachDTO> ketqua = new List<SachDTO>();
-            ketqua = data.Saches.Where(c => (c.MaSach.Contains(tieuchi) ||
-                                             c.TenSach.Contains(tieuchi) ||
-                                             c.DauSach.TenDauSach.Contains(tieuchi) ||
-                                             c.DauSach.TheLoai.TenTheLoai.Contains(tieuchi) ||
-                                             c.TenTacGia.Contains(tieuchi) ||
-                                             c.TenNhaXuatBan.Contains(tieuchi)
-                                            ) && c.TrangThai.Value == true).Select(c => new SachDTO
+            ketqua = data.Saches.Where(c =>     (c.MaSach.Contains(tieuchi) ||
+                                                 c.TenSach.Contains(tieuchi) ||
+                                                 c.DauSach.TenDauSach.Contains(tieuchi) ||
+                                                 c.DauSach.TheLoai.TenTheLoai.Contains(tieuchi) ||
+                                                 c.TenTacGia.Contains(tieuchi) ||
+                                                 c.TenNhaXuatBan.Contains(tieuchi)
+                                                  ) && c.TrangThai.Value == true).Select(c => new SachDTO
                                                    {
 
                                                        MaSach = c.MaSach,
+                                                       MaDauSach = c.MaDauSach,
                                                        TenSach = c.TenSach,
                                                        MaTheLoai = c.DauSach.MaTheLoai,
                                                        TenTacGia = c.TenTacGia,
@@ -106,7 +109,7 @@ namespace DAL
                                                    }
 
 
-                                                    ).ToList();
+                                         ).ToList();
             return ketqua;
         }
     }

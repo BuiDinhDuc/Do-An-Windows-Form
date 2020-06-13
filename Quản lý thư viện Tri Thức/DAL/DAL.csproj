@@ -65,6 +65,7 @@
     <Compile Include="DauSach.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
+    <Compile Include="DauSachDAL.cs" />
     <Compile Include="DocGia.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
