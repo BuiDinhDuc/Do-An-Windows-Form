@@ -25,11 +25,48 @@ namespace Quản_lý_thư_viện_Tri_Thức
             dataThuThu.AutoGenerateColumns = false;
             dataThuThu.DataSource = nhanvienBUS.LayDSNhanVien();
 
-            txtMaNV.DataBindings.Add("Text", dataThuThu.DataSource, "MaNV");
-            txtHoTenNV.DataBindings.Add("Text", dataThuThu.DataSource, "HoTenNV");
-            dtmNgSinh.DataBindings.Add("Text",dataThuThu.DataSource,"NgSinh");
-            txtSDT.DataBindings.Add("Text", dataThuThu.DataSource, "SDT");
+            NhanVienDTO nv = nhanvienBUS.timNhanVien(dataThuThu.Rows[0].Cells[0].Value.ToString());
 
+            txtMaNV.Text = nv.MaNV;
+            txtHoTenNV.Text = nv.HoTenNV;
+            txtSDT.Text = nv.SDT;
+            dtmNgSinh.Value = nv.NgSinh;
+
+        }
+
+        private void dataThuThu_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int vitri = e.RowIndex;
+
+            if (vitri < 0)
+                return;
+            else
+            {
+                NhanVienDTO nv = nhanvienBUS.timNhanVien(dataThuThu.Rows[vitri].Cells[0].Value.ToString());
+
+                txtMaNV.Text = nv.MaNV;
+                txtHoTenNV.Text = nv.HoTenNV;
+                txtSDT.Text = nv.SDT;
+                dtmNgSinh.Value = nv.NgSinh;
+
+            }
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            txtMaNV.Text = string.Empty;
+            txtHoTenNV.Text = string.Empty;
+            txtSDT.Text = string.Empty;
+            dtmNgSinh.Value = DateTime.Now;
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (nhanvienBUS.xoaNhanVien(txtMaNV.Text))
+                MessageBox.Show(Constrant.XoaThanhCong, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show(Constrant.XoaThatBai, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            frmLibrarians_Load(sender, e);
         }
     }
 }

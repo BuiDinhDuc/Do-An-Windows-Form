@@ -28,5 +28,36 @@ namespace DAL
             return result;
 
         }
+
+        public NhanVienDTO timNhanVien(string MaNV)
+        {
+            NhanVienDTO nhanvienDTO = new NhanVienDTO();
+            NhanVien nhanVien = new NhanVien();
+            nhanVien = data.NhanViens.SingleOrDefault(u => u.MaNV == MaNV && u.TrangThai == true);
+            nhanvienDTO.MaNV = nhanVien.MaNV;
+            nhanvienDTO.HoTenNV = nhanVien.HoTenNV;
+            nhanvienDTO.NgSinh = nhanVien.NgSinh.Value;
+            nhanvienDTO.SDT = nhanVien.SDT;
+            nhanvienDTO.TaiKhoan = nhanVien.TaiKhoan;
+            nhanvienDTO.MatKhau = nhanVien.MatKhau;
+            nhanvienDTO.Quyen = nhanVien.Quyen.Value;
+
+            return nhanvienDTO;
+        }
+
+        public bool xoaNhanVien(string MaNV)
+        {
+            try
+            {
+                NhanVien nhanVien = data.NhanViens.SingleOrDefault(u => u.MaNV == MaNV && u.TrangThai == true);
+
+                nhanVien.TrangThai = false;
+                data.SaveChanges();
+                return true;
+            } catch( Exception)
+            {
+                return false;
+            }
+        }
     }
 }

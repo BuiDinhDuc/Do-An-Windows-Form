@@ -38,10 +38,6 @@
             this.toolThuVien = new System.Windows.Forms.ToolStripMenuItem();
             this.mnusMenu = new System.Windows.Forms.MenuStrip();
             this.toolThongKe = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolThongKeMuon = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolThongKeMuonNhieu = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolThongKeTienPhat = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolThongKeNhap = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.toolDoiMK = new System.Windows.Forms.ToolStripMenuItem();
             this.toolDangXuat = new System.Windows.Forms.ToolStripMenuItem();
@@ -132,40 +128,10 @@
             // 
             // toolThongKe
             // 
-            this.toolThongKe.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolThongKeMuon,
-            this.toolThongKeNhap});
             this.toolThongKe.Image = global::Quản_lý_thư_viện_Tri_Thức.Properties.Resources.report_sach;
             this.toolThongKe.Name = "toolThongKe";
             this.toolThongKe.Size = new System.Drawing.Size(94, 54);
             this.toolThongKe.Text = "Thống kê";
-            // 
-            // toolThongKeMuon
-            // 
-            this.toolThongKeMuon.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolThongKeMuonNhieu,
-            this.toolThongKeTienPhat});
-            this.toolThongKeMuon.Name = "toolThongKeMuon";
-            this.toolThongKeMuon.Size = new System.Drawing.Size(205, 24);
-            this.toolThongKeMuon.Text = "Thống kê mượn sách";
-            // 
-            // toolThongKeMuonNhieu
-            // 
-            this.toolThongKeMuonNhieu.Name = "toolThongKeMuonNhieu";
-            this.toolThongKeMuonNhieu.Size = new System.Drawing.Size(180, 24);
-            this.toolThongKeMuonNhieu.Text = "Mượn nhiều nhất";
-            // 
-            // toolThongKeTienPhat
-            // 
-            this.toolThongKeTienPhat.Name = "toolThongKeTienPhat";
-            this.toolThongKeTienPhat.Size = new System.Drawing.Size(180, 24);
-            this.toolThongKeTienPhat.Text = "Tổng tiền phạt";
-            // 
-            // toolThongKeNhap
-            // 
-            this.toolThongKeNhap.Name = "toolThongKeNhap";
-            this.toolThongKeNhap.Size = new System.Drawing.Size(205, 24);
-            this.toolThongKeNhap.Text = "Thống kê nhập sách";
             // 
             // toolTaiKhoan
             // 
@@ -248,7 +214,7 @@
             this.lblTime.Size = new System.Drawing.Size(124, 27);
             this.lblTime.TabIndex = 13;
             // 
-            // frmHome
+            // frmTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -261,7 +227,7 @@
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "frmHome";
+            this.Name = "frmTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmHome_Load);
             this.mnusMenu.ResumeLayout(false);
@@ -277,10 +243,6 @@
         public System.Windows.Forms.ToolStripMenuItem toolDangXuat;
         public System.Windows.Forms.ToolStripMenuItem toolDoiMK;
         public System.Windows.Forms.ToolStripMenuItem toolTaiKhoan;
-        private System.Windows.Forms.ToolStripMenuItem toolThongKeNhap;
-        private System.Windows.Forms.ToolStripMenuItem toolThongKeTienPhat;
-        private System.Windows.Forms.ToolStripMenuItem toolThongKeMuonNhieu;
-        private System.Windows.Forms.ToolStripMenuItem toolThongKeMuon;
         private System.Windows.Forms.ToolStripMenuItem toolThongKe;
         public System.Windows.Forms.ToolStripMenuItem toolNhapSach;
         public System.Windows.Forms.ToolStripMenuItem toolMuonTra;

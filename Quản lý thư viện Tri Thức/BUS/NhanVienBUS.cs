@@ -51,5 +51,15 @@ namespace BUS
 
             return str;
         }
+
+        public NhanVienDTO timNhanVien(string MaNV)
+        {
+            return nhanvienDAL.timNhanVien(MaNV);
+        }
+
+        public bool  xoaNhanVien(string MaNV)
+        {
+            return nhanvienDAL.xoaNhanVien(MaNV);
+        }
     }
 }
