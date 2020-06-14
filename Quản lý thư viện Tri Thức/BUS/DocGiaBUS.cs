@@ -15,5 +15,10 @@ namespace BUS
         {
             return docgiaDAL.LayDSDocGia();
         }
+
+        public DocGiaDTO timDOcGia(string MaDG)
+        {
+            return docgiaDAL.timDocGia(MaDG);
+        }
     }
 }

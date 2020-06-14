@@ -27,7 +27,22 @@ namespace DAL
 
             return dsDocGia;
         }
+        public DocGiaDTO timDocGia(string MaDG)
+        {
+            DocGiaDTO docGiaDTO = new DocGiaDTO();
 
+            DocGia docgia = data.DocGias.SingleOrDefault(u => u.MaDocGia == MaDG && u.TrangThai == true);
+
+            docGiaDTO.MaDocGia = docgia.MaDocGia;
+            docGiaDTO.TenDocGia = docgia.TenDocGia;
+            docGiaDTO.DiaChi = docgia.DiaChi;
+            docGiaDTO.CMND = docgia.CMND;
+            docGiaDTO.SoThe = docgia.SoThe;
+            docgia.TrangThai = docgia.TrangThai;
+
+            return docGiaDTO;
+            
+        }
         
     }
 }

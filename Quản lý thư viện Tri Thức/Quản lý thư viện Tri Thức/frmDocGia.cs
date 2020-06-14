@@ -28,24 +28,23 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         private void dataDocGia_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //int vitri = e.RowIndex;
+            int vitri = e.RowIndex;
 
-            //if (vitri < 0)
-            //    return;
-            //else
-            //{
-            //    Sach s = docgiaBUS(dataSach.Rows[vitri].Cells[0].Value.ToString());
-            //    if (s != null)
-            //    {
-            //        txtMaSach.Text = s.MaSach;
-            //        txtNamXuatBan.Text = s.NamXuatBan.ToString();
-            //        txtNhaXuatBan.Text = s.TenNhaXuatBan;
-            //        txtSoLuong.Text = s.SoLuong.ToString();
-            //        txtTacGia.Text = s.TenTacGia;
-            //        txtTenSach.Text = s.TenSach;
-            //        cbbTheLoai.SelectedValue = s.MaTheLoai;
-            //    }
-            //}
+            if (vitri < 0)
+                return;
+            else
+            {
+                DocGiaDTO docGiaDTO = new DocGiaDTO();
+                docGiaDTO = docgiaBUS.timDOcGia(dataDocGia.Rows[vitri].Cells[0].Value.ToString());
+                txtMaDocGia.Text = docGiaDTO.MaDocGia;
+                txtMaThe.Text = docGiaDTO.SoThe;
+                
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

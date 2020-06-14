@@ -107,6 +107,7 @@
     <Compile Include="TheThuVien.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
+    <Compile Include="TheThuVienDAL.cs" />
     <Compile Include="TraSach.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
