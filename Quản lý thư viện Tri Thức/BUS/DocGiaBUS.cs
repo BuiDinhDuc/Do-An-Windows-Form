@@ -20,5 +20,30 @@ namespace BUS
         {
             return docgiaDAL.timDocGia(MaDG);
         }
+
+        public string phatsinhma()
+        {
+            string Ma = "DG";
+            int so = docgiaDAL.phatsinhma();
+
+            int idem = 0;
+            foreach(char i in so.ToString())
+            {
+                idem++;
+            }
+
+            for(int j = 0;j< 8- idem;j++)
+            {
+                Ma += "0";
+            }
+
+            return Ma + so.ToString();
+
+        }
+
+        public bool themDocGia(DocGiaDTO docGiaDTO)
+        {
+            return docgiaDAL.themDocGia(docGiaDTO);
+        }
     }
 }

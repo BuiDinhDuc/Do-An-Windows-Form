@@ -30,7 +30,7 @@
         {
             this.lblTieuDe = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.txtCMND = new System.Windows.Forms.TextBox();
             this.lblCMND = new System.Windows.Forms.Label();
             this.lblDiaChi = new System.Windows.Forms.Label();
@@ -63,15 +63,17 @@
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // button1
+            // btnThem
             // 
-            this.button1.Location = new System.Drawing.Point(185, 295);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 44);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnThem.Location = new System.Drawing.Point(185, 295);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(102, 44);
+            this.btnThem.TabIndex = 5;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtCMND
             // 
@@ -172,14 +174,14 @@
             this.lblMaDocGia.TabIndex = 0;
             this.lblMaDocGia.Text = "Mã độc giả";
             // 
-            // frmAddReaders
+            // frmThemDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 400);
+            this.ClientSize = new System.Drawing.Size(589, 371);
             this.Controls.Add(this.lblTieuDe);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.txtCMND);
             this.Controls.Add(this.lblCMND);
             this.Controls.Add(this.lblDiaChi);
@@ -195,7 +197,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmAddReaders";
+            this.Name = "frmThemDocGia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Reader";
             this.Load += new System.EventHandler(this.frmAddReaders_Load);
@@ -208,7 +210,7 @@
 
         private System.Windows.Forms.Label lblTieuDe;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.TextBox txtCMND;
         private System.Windows.Forms.Label lblCMND;
         private System.Windows.Forms.Label lblDiaChi;

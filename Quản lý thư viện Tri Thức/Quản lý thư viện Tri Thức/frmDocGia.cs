@@ -15,6 +15,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
     public partial class frmDocGia : Form
     {
         DocGiaBUS docgiaBUS = new DocGiaBUS();
+        TheThuVienBUS theThuVienBUS = new TheThuVienBUS();
         public frmDocGia()
         {
             InitializeComponent();
@@ -24,6 +25,16 @@ namespace Quản_lý_thư_viện_Tri_Thức
         {
             dataDocGia.AutoGenerateColumns = false;
             dataDocGia.DataSource = docgiaBUS.LayDSDocGia();
+
+            DocGiaDTO docGiaDTO = new DocGiaDTO();
+            docGiaDTO = docgiaBUS.timDOcGia(dataDocGia.Rows[0].Cells[0].Value.ToString());
+            txtMaDocGia.Text = docGiaDTO.MaDocGia;
+            txtMaThe.Text = docGiaDTO.SoThe;
+            txtTenDocGia.Text = docGiaDTO.TenDocGia;
+            txtCMND.Text = docGiaDTO.CMND;
+            txtDiaChi.Text = docGiaDTO.DiaChi;
+
+            dtmNgayBD.Value = theThuVienBUS.LayNgayBatDau(txtMaThe.Text);
         }
 
         private void dataDocGia_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -38,11 +49,26 @@ namespace Quản_lý_thư_viện_Tri_Thức
                 docGiaDTO = docgiaBUS.timDOcGia(dataDocGia.Rows[vitri].Cells[0].Value.ToString());
                 txtMaDocGia.Text = docGiaDTO.MaDocGia;
                 txtMaThe.Text = docGiaDTO.SoThe;
+                txtTenDocGia.Text = docGiaDTO.TenDocGia;
+                txtCMND.Text = docGiaDTO.CMND;
+                txtDiaChi.Text = docGiaDTO.DiaChi;
+
+                dtmNgayBD.Value = theThuVienBUS.LayNgayBatDau(txtMaThe.Text);
+
+               
                 
             }
         }
 
         private void btnThem_Click(object sender, EventArgs e)
+        {
+            frmThemDocGia fDocGia = new frmThemDocGia();
+            fDocGia.ShowDialog();
+
+            frmReaders_Load(sender, e);
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
         {
 
         }

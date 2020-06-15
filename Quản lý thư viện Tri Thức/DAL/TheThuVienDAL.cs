@@ -15,5 +15,35 @@ namespace DAL
 
             return the.NgayBatDau.Value;
         }
+
+        public int phatsinhma()
+        {
+            return data.TheThuViens.Count() + 1;
+        }
+
+        public bool themTheTV(TheThuVienDTO theThuVienDTO)
+        {
+            try
+            {
+                TheThuVien theThuVien = new TheThuVien
+                {
+                    SoThe = theThuVienDTO.SoThe,
+                    NgayBatDau = theThuVienDTO.NgayBatDau,
+                    TrangThai = true
+
+                };
+
+                data.TheThuViens.Add(theThuVien);
+                data.SaveChanges();
+
+                return true;
+            } catch(Exception)
+            {
+                return false;
+            }
+
+
+           
+        }
     }
 }

@@ -43,6 +43,38 @@ namespace DAL
             return docGiaDTO;
             
         }
+
+        public int phatsinhma()
+        {
+            return data.DocGias.Count()+1;
+   
+        }
+
+        public bool themDocGia(DocGiaDTO docGiaDTO)
+        {
+            try
+            {
+                DocGia docGia = new DocGia {
+
+                    MaDocGia = docGiaDTO.MaDocGia,
+                    TenDocGia = docGiaDTO.TenDocGia,
+                    CMND = docGiaDTO.CMND,
+                    DiaChi = docGiaDTO.DiaChi,
+                    SoThe = docGiaDTO.SoThe,
+                    TrangThai = true
+                
+                
+                };
+                data.DocGias.Add(docGia);
+                data.SaveChanges();
+
+                return true;
+            }
+            catch(Exception)
+            {
+                return false;
+            }
+        }
         
     }
 }

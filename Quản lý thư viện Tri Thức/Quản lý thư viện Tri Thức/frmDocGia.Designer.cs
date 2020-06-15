@@ -95,6 +95,7 @@
             this.btnXoa.TabIndex = 33;
             this.toTXoa.SetToolTip(this.btnXoa, "Xóa");
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -156,6 +157,7 @@
             this.dataDocGia.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataDocGia.Location = new System.Drawing.Point(0, 198);
             this.dataDocGia.Name = "dataDocGia";
+            this.dataDocGia.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -174,30 +176,35 @@
             this.MaDocGia.DataPropertyName = "MaDocGia";
             this.MaDocGia.HeaderText = "Mã Độc Giả";
             this.MaDocGia.Name = "MaDocGia";
+            this.MaDocGia.ReadOnly = true;
             // 
             // TenDocGia
             // 
             this.TenDocGia.DataPropertyName = "TenDocGia";
             this.TenDocGia.HeaderText = "Tên Độc Giả";
             this.TenDocGia.Name = "TenDocGia";
+            this.TenDocGia.ReadOnly = true;
             // 
             // CMND
             // 
             this.CMND.DataPropertyName = "CMND";
             this.CMND.HeaderText = "CMND";
             this.CMND.Name = "CMND";
+            this.CMND.ReadOnly = true;
             // 
             // DiaChi
             // 
             this.DiaChi.DataPropertyName = "DiaChi";
             this.DiaChi.HeaderText = "Địa Chỉ";
             this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
             // 
             // SoThe
             // 
             this.SoThe.DataPropertyName = "SoThe";
             this.SoThe.HeaderText = "Số Thẻ";
             this.SoThe.Name = "SoThe";
+            this.SoThe.ReadOnly = true;
             // 
             // label5
             // 

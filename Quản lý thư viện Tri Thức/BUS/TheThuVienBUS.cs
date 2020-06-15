@@ -14,5 +14,30 @@ namespace BUS
         {
             return theThuVienDAL.LayNgayBatDau(MaThe);
         }
+
+        public string phatsinhma()
+        {
+            string Ma = "Th";
+            int so = theThuVienDAL.phatsinhma();
+
+            int idem = 0;
+            foreach (char i in so.ToString())
+            {
+                idem++;
+            }
+
+            for (int j = 0; j < 8 - idem; j++)
+            {
+                Ma += "0";
+            }
+
+            return Ma + so.ToString();
+
+        }
+
+        public bool themTheTV( TheThuVienDTO theThuVienDTO)
+        {
+            return theThuVienDAL.themTheTV(theThuVienDTO);
+        }
     }
 }
