@@ -44,7 +44,7 @@
             this.lblQuyDinh8.Location = new System.Drawing.Point(66, 427);
             this.lblQuyDinh8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuyDinh8.Name = "lblQuyDinh8";
-            this.lblQuyDinh8.Size = new System.Drawing.Size(753, 35);
+            this.lblQuyDinh8.Size = new System.Drawing.Size(1045, 35);
             this.lblQuyDinh8.TabIndex = 18;
             this.lblQuyDinh8.Text = "8.";
             // 
@@ -53,7 +53,7 @@
             this.lblQuyDinh7.Location = new System.Drawing.Point(66, 377);
             this.lblQuyDinh7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuyDinh7.Name = "lblQuyDinh7";
-            this.lblQuyDinh7.Size = new System.Drawing.Size(753, 35);
+            this.lblQuyDinh7.Size = new System.Drawing.Size(1045, 35);
             this.lblQuyDinh7.TabIndex = 17;
             this.lblQuyDinh7.Text = "7.";
             // 
@@ -62,7 +62,7 @@
             this.lblQuyDinh6.Location = new System.Drawing.Point(66, 327);
             this.lblQuyDinh6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuyDinh6.Name = "lblQuyDinh6";
-            this.lblQuyDinh6.Size = new System.Drawing.Size(753, 35);
+            this.lblQuyDinh6.Size = new System.Drawing.Size(1045, 35);
             this.lblQuyDinh6.TabIndex = 16;
             this.lblQuyDinh6.Text = "6.";
             // 
@@ -71,7 +71,7 @@
             this.lblQuyDinh5.Location = new System.Drawing.Point(66, 277);
             this.lblQuyDinh5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuyDinh5.Name = "lblQuyDinh5";
-            this.lblQuyDinh5.Size = new System.Drawing.Size(753, 35);
+            this.lblQuyDinh5.Size = new System.Drawing.Size(1045, 35);
             this.lblQuyDinh5.TabIndex = 15;
             this.lblQuyDinh5.Text = "5. ";
             // 
@@ -80,7 +80,7 @@
             this.lblQuyDinh3.Location = new System.Drawing.Point(66, 177);
             this.lblQuyDinh3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuyDinh3.Name = "lblQuyDinh3";
-            this.lblQuyDinh3.Size = new System.Drawing.Size(753, 35);
+            this.lblQuyDinh3.Size = new System.Drawing.Size(1045, 35);
             this.lblQuyDinh3.TabIndex = 14;
             this.lblQuyDinh3.Text = "3. ";
             // 
@@ -89,7 +89,7 @@
             this.lblQuyDinh4.Location = new System.Drawing.Point(66, 227);
             this.lblQuyDinh4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuyDinh4.Name = "lblQuyDinh4";
-            this.lblQuyDinh4.Size = new System.Drawing.Size(753, 35);
+            this.lblQuyDinh4.Size = new System.Drawing.Size(1045, 35);
             this.lblQuyDinh4.TabIndex = 13;
             this.lblQuyDinh4.Text = "4. ";
             // 
@@ -98,7 +98,7 @@
             this.lblQuyDinh2.Location = new System.Drawing.Point(66, 127);
             this.lblQuyDinh2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuyDinh2.Name = "lblQuyDinh2";
-            this.lblQuyDinh2.Size = new System.Drawing.Size(753, 35);
+            this.lblQuyDinh2.Size = new System.Drawing.Size(1045, 35);
             this.lblQuyDinh2.TabIndex = 12;
             this.lblQuyDinh2.Text = "2. ";
             // 
@@ -107,22 +107,23 @@
             this.lblQuyDinh1.Location = new System.Drawing.Point(66, 77);
             this.lblQuyDinh1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuyDinh1.Name = "lblQuyDinh1";
-            this.lblQuyDinh1.Size = new System.Drawing.Size(753, 35);
+            this.lblQuyDinh1.Size = new System.Drawing.Size(1045, 35);
             this.lblQuyDinh1.TabIndex = 11;
             this.lblQuyDinh1.Text = "1.";
             // 
             // lblTieuDe
             // 
             this.lblTieuDe.AutoSize = true;
-            this.lblTieuDe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTieuDe.Location = new System.Drawing.Point(280, 29);
+            this.lblTieuDe.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTieuDe.ForeColor = System.Drawing.Color.Blue;
+            this.lblTieuDe.Location = new System.Drawing.Point(433, 31);
             this.lblTieuDe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTieuDe.Name = "lblTieuDe";
-            this.lblTieuDe.Size = new System.Drawing.Size(286, 25);
+            this.lblTieuDe.Size = new System.Drawing.Size(383, 31);
             this.lblTieuDe.TabIndex = 10;
             this.lblTieuDe.Text = "Những quy định của thư viện";
             // 
-            // frmLaws
+            // frmQuyDinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -139,9 +140,10 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmLaws";
+            this.Name = "frmQuyDinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLaws";
+            this.Load += new System.EventHandler(this.frmQuyDinh_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -32,7 +32,6 @@
             this.toolNhapSach = new System.Windows.Forms.ToolStripMenuItem();
             this.toolMuonTra = new System.Windows.Forms.ToolStripMenuItem();
             this.toolQuanLiSach = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolQuyDinh = new System.Windows.Forms.ToolStripMenuItem();
             this.toolDocGia = new System.Windows.Forms.ToolStripMenuItem();
             this.toolThuThu = new System.Windows.Forms.ToolStripMenuItem();
             this.toolThuVien = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,21 +42,29 @@
             this.toolDangXuat = new System.Windows.Forms.ToolStripMenuItem();
             this.toolDangNhap = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTimKiem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolQuyDinh = new System.Windows.Forms.ToolStripMenuItem();
             this.sttStatus = new System.Windows.Forms.StatusStrip();
             this.lblCurrentUser = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblName = new System.Windows.Forms.ToolStripStatusLabel();
             this.time = new System.Windows.Forms.Timer(this.components);
             this.lblTime = new System.Windows.Forms.Label();
+            this.nhậpSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thêmĐầuSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thêmThểLoạiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnusMenu.SuspendLayout();
             this.sttStatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolNhapSach
             // 
+            this.toolNhapSach.AutoSize = false;
+            this.toolNhapSach.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nhậpSáchToolStripMenuItem,
+            this.thêmĐầuSáchToolStripMenuItem,
+            this.thêmThểLoạiToolStripMenuItem});
             this.toolNhapSach.Name = "toolNhapSach";
-            this.toolNhapSach.Size = new System.Drawing.Size(86, 54);
-            this.toolNhapSach.Text = "Nhập sách";
-            this.toolNhapSach.Click += new System.EventHandler(this.toolNhapSach_Click);
+            this.toolNhapSach.Size = new System.Drawing.Size(120, 54);
+            this.toolNhapSach.Text = "Thêm sách";
             // 
             // toolMuonTra
             // 
@@ -68,42 +75,36 @@
             // 
             // toolQuanLiSach
             // 
+            this.toolQuanLiSach.AutoSize = false;
             this.toolQuanLiSach.BackColor = System.Drawing.Color.Lavender;
             this.toolQuanLiSach.Image = global::Quản_lý_thư_viện_Tri_Thức.Properties.Resources.Edit;
             this.toolQuanLiSach.Name = "toolQuanLiSach";
-            this.toolQuanLiSach.Size = new System.Drawing.Size(115, 54);
+            this.toolQuanLiSach.Size = new System.Drawing.Size(120, 54);
             this.toolQuanLiSach.Text = "Quản lý sách";
             this.toolQuanLiSach.Click += new System.EventHandler(this.toolQuanLiSach_Click);
-            // 
-            // toolQuyDinh
-            // 
-            this.toolQuyDinh.Name = "toolQuyDinh";
-            this.toolQuyDinh.Size = new System.Drawing.Size(172, 24);
-            this.toolQuyDinh.Text = "Quy định chung";
-            this.toolQuyDinh.Click += new System.EventHandler(this.toolQuyDinh_Click);
             // 
             // toolDocGia
             // 
             this.toolDocGia.Name = "toolDocGia";
-            this.toolDocGia.Size = new System.Drawing.Size(172, 24);
+            this.toolDocGia.Size = new System.Drawing.Size(125, 24);
             this.toolDocGia.Text = "Độc giả";
             this.toolDocGia.Click += new System.EventHandler(this.toolDocGia_Click);
             // 
             // toolThuThu
             // 
             this.toolThuThu.Name = "toolThuThu";
-            this.toolThuThu.Size = new System.Drawing.Size(172, 24);
+            this.toolThuThu.Size = new System.Drawing.Size(125, 24);
             this.toolThuThu.Text = "Thủ thư";
             this.toolThuThu.Click += new System.EventHandler(this.toolThuThu_Click);
             // 
             // toolThuVien
             // 
+            this.toolThuVien.AutoSize = false;
             this.toolThuVien.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolThuThu,
-            this.toolDocGia,
-            this.toolQuyDinh});
+            this.toolDocGia});
             this.toolThuVien.Name = "toolThuVien";
-            this.toolThuVien.Size = new System.Drawing.Size(74, 54);
+            this.toolThuVien.Size = new System.Drawing.Size(120, 54);
             this.toolThuVien.Text = "Thư viện";
             // 
             // mnusMenu
@@ -119,7 +120,8 @@
             this.toolThongKe,
             this.toolTaiKhoan,
             this.toolDangNhap,
-            this.toolTimKiem});
+            this.toolTimKiem,
+            this.toolQuyDinh});
             this.mnusMenu.Location = new System.Drawing.Point(0, 0);
             this.mnusMenu.Name = "mnusMenu";
             this.mnusMenu.Size = new System.Drawing.Size(1174, 58);
@@ -128,9 +130,10 @@
             // 
             // toolThongKe
             // 
+            this.toolThongKe.AutoSize = false;
             this.toolThongKe.Image = global::Quản_lý_thư_viện_Tri_Thức.Properties.Resources.report_sach;
             this.toolThongKe.Name = "toolThongKe";
-            this.toolThongKe.Size = new System.Drawing.Size(94, 54);
+            this.toolThongKe.Size = new System.Drawing.Size(120, 54);
             this.toolThongKe.Text = "Thống kê";
             // 
             // toolTaiKhoan
@@ -159,9 +162,10 @@
             // 
             // toolDangNhap
             // 
+            this.toolDangNhap.AutoSize = false;
             this.toolDangNhap.Image = global::Quản_lý_thư_viện_Tri_Thức.Properties.Resources.Lock;
             this.toolDangNhap.Name = "toolDangNhap";
-            this.toolDangNhap.Size = new System.Drawing.Size(102, 54);
+            this.toolDangNhap.Size = new System.Drawing.Size(120, 54);
             this.toolDangNhap.Text = "Đăng nhập";
             this.toolDangNhap.Click += new System.EventHandler(this.toolDangNhap_Click);
             // 
@@ -173,6 +177,13 @@
             this.toolTimKiem.Size = new System.Drawing.Size(134, 54);
             this.toolTimKiem.Text = "Tìm kiếm sách";
             this.toolTimKiem.Click += new System.EventHandler(this.toolTimKiem_Click);
+            // 
+            // toolQuyDinh
+            // 
+            this.toolQuyDinh.Name = "toolQuyDinh";
+            this.toolQuyDinh.Size = new System.Drawing.Size(115, 54);
+            this.toolQuyDinh.Text = "Quy định chung";
+            this.toolQuyDinh.Click += new System.EventHandler(this.toolQuyDinh_Click);
             // 
             // sttStatus
             // 
@@ -214,6 +225,24 @@
             this.lblTime.Size = new System.Drawing.Size(125, 28);
             this.lblTime.TabIndex = 13;
             // 
+            // nhậpSáchToolStripMenuItem
+            // 
+            this.nhậpSáchToolStripMenuItem.Name = "nhậpSáchToolStripMenuItem";
+            this.nhậpSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.nhậpSáchToolStripMenuItem.Text = "Nhập sách";
+            // 
+            // thêmĐầuSáchToolStripMenuItem
+            // 
+            this.thêmĐầuSáchToolStripMenuItem.Name = "thêmĐầuSáchToolStripMenuItem";
+            this.thêmĐầuSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.thêmĐầuSáchToolStripMenuItem.Text = "Thêm đầu sách";
+            // 
+            // thêmThểLoạiToolStripMenuItem
+            // 
+            this.thêmThểLoạiToolStripMenuItem.Name = "thêmThểLoạiToolStripMenuItem";
+            this.thêmThểLoạiToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.thêmThểLoạiToolStripMenuItem.Text = "Thêm thể loại";
+            // 
             // frmTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -247,7 +276,6 @@
         public System.Windows.Forms.ToolStripMenuItem toolNhapSach;
         public System.Windows.Forms.ToolStripMenuItem toolMuonTra;
         public System.Windows.Forms.ToolStripMenuItem toolQuanLiSach;
-        public System.Windows.Forms.ToolStripMenuItem toolQuyDinh;
         public System.Windows.Forms.ToolStripMenuItem toolDocGia;
         public System.Windows.Forms.ToolStripMenuItem toolThuThu;
         public System.Windows.Forms.ToolStripMenuItem toolThuVien;
@@ -258,6 +286,10 @@
         private System.Windows.Forms.ToolStripStatusLabel lblName;
         private System.Windows.Forms.Timer time;
         private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.ToolStripMenuItem toolQuyDinh;
+        private System.Windows.Forms.ToolStripMenuItem nhậpSáchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thêmĐầuSáchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thêmThểLoạiToolStripMenuItem;
     }
 }
 

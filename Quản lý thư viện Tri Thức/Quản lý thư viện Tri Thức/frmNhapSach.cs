@@ -16,5 +16,10 @@ namespace Quản_lý_thư_viện_Tri_Thức
         {
             InitializeComponent();
         }
+
+        private void btnApply_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

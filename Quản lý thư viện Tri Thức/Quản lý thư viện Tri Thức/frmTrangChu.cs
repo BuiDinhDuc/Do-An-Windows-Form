@@ -112,18 +112,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
             
         }
 
-        private void toolQuyDinh_Click(object sender, EventArgs e)
-        {
-            frmQuyDinh fQuyDinh = new frmQuyDinh();
-            foreach (Form frm in this.MdiChildren)
-            {
-                frm.Close();
-            }
-            
-                fQuyDinh.MdiParent = this;
-                fQuyDinh.Show();
-            
-        }
+      
 
         private void toolQuanLiSach_Click(object sender, EventArgs e)
         {
@@ -248,5 +237,19 @@ namespace Quản_lý_thư_viện_Tri_Thức
             
 
         }
+
+        private void toolQuyDinh_Click(object sender, EventArgs e)
+        {
+            frmQuyDinh fQuyDinh = new frmQuyDinh();
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+
+            fQuyDinh.MdiParent = this;
+            fQuyDinh.Show();
+        }
+
+        
     }
 }

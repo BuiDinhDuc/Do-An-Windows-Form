@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.btnCancel = new System.Windows.Forms.Button();
-            this.btnApply = new System.Windows.Forms.Button();
-            this.btnThemTL = new System.Windows.Forms.Button();
             this.txtTacGia = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtMaNV = new System.Windows.Forms.TextBox();
@@ -48,47 +46,31 @@
             this.btnOK = new System.Windows.Forms.Button();
             this.grpNhapSach = new System.Windows.Forms.GroupBox();
             this.lblTieuDe = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.grpNhapSach.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(820, 416);
+            this.btnCancel.Location = new System.Drawing.Point(819, 489);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(102, 41);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // btnApply
-            // 
-            this.btnApply.Location = new System.Drawing.Point(487, 416);
-            this.btnApply.Name = "btnApply";
-            this.btnApply.Size = new System.Drawing.Size(102, 41);
-            this.btnApply.TabIndex = 7;
-            this.btnApply.Text = "Apply";
-            this.btnApply.UseVisualStyleBackColor = true;
-            // 
-            // btnThemTL
-            // 
-            this.btnThemTL.Location = new System.Drawing.Point(450, 179);
-            this.btnThemTL.Name = "btnThemTL";
-            this.btnThemTL.Size = new System.Drawing.Size(117, 24);
-            this.btnThemTL.TabIndex = 4;
-            this.btnThemTL.Text = "Thêm thể loại";
-            this.btnThemTL.UseVisualStyleBackColor = true;
-            // 
             // txtTacGia
             // 
-            this.txtTacGia.Location = new System.Drawing.Point(572, 125);
+            this.txtTacGia.Location = new System.Drawing.Point(701, 125);
             this.txtTacGia.Name = "txtTacGia";
-            this.txtTacGia.Size = new System.Drawing.Size(150, 23);
+            this.txtTacGia.Size = new System.Drawing.Size(226, 23);
             this.txtTacGia.TabIndex = 2;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(460, 64);
+            this.label6.Location = new System.Drawing.Point(544, 64);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 17);
             this.label6.TabIndex = 0;
@@ -96,16 +78,16 @@
             // 
             // txtMaNV
             // 
-            this.txtMaNV.Location = new System.Drawing.Point(572, 61);
+            this.txtMaNV.Location = new System.Drawing.Point(701, 64);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.ReadOnly = true;
-            this.txtMaNV.Size = new System.Drawing.Size(150, 23);
+            this.txtMaNV.Size = new System.Drawing.Size(226, 23);
             this.txtMaNV.TabIndex = 0;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(460, 241);
+            this.label5.Location = new System.Drawing.Point(544, 241);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 17);
             this.label5.TabIndex = 0;
@@ -113,9 +95,9 @@
             // 
             // txtNamXB
             // 
-            this.txtNamXB.Location = new System.Drawing.Point(572, 238);
+            this.txtNamXB.Location = new System.Drawing.Point(701, 238);
             this.txtNamXB.Name = "txtNamXB";
-            this.txtNamXB.Size = new System.Drawing.Size(150, 23);
+            this.txtNamXB.Size = new System.Drawing.Size(226, 23);
             this.txtNamXB.TabIndex = 6;
             // 
             // cbbTheLoai
@@ -123,7 +105,7 @@
             this.cbbTheLoai.FormattingEnabled = true;
             this.cbbTheLoai.Location = new System.Drawing.Point(252, 180);
             this.cbbTheLoai.Name = "cbbTheLoai";
-            this.cbbTheLoai.Size = new System.Drawing.Size(150, 24);
+            this.cbbTheLoai.Size = new System.Drawing.Size(226, 24);
             this.cbbTheLoai.TabIndex = 3;
             // 
             // label2
@@ -140,22 +122,22 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(143, 183);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 17);
+            this.label1.Size = new System.Drawing.Size(68, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Thể loại";
+            this.label1.Text = "Đầu sách";
             // 
             // txtNXB
             // 
             this.txtNXB.Location = new System.Drawing.Point(252, 238);
             this.txtNXB.Name = "txtNXB";
-            this.txtNXB.Size = new System.Drawing.Size(150, 23);
+            this.txtNXB.Size = new System.Drawing.Size(226, 23);
             this.txtNXB.TabIndex = 5;
             // 
             // txtSach
             // 
             this.txtSach.Location = new System.Drawing.Point(252, 125);
             this.txtSach.Name = "txtSach";
-            this.txtSach.Size = new System.Drawing.Size(150, 23);
+            this.txtSach.Size = new System.Drawing.Size(226, 23);
             this.txtSach.TabIndex = 1;
             // 
             // txtMaSach
@@ -163,13 +145,13 @@
             this.txtMaSach.Location = new System.Drawing.Point(252, 61);
             this.txtMaSach.Name = "txtMaSach";
             this.txtMaSach.ReadOnly = true;
-            this.txtMaSach.Size = new System.Drawing.Size(150, 23);
+            this.txtMaSach.Size = new System.Drawing.Size(226, 23);
             this.txtMaSach.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(460, 128);
+            this.label4.Location = new System.Drawing.Point(544, 128);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 17);
             this.label4.TabIndex = 0;
@@ -196,7 +178,7 @@
             // btnOK
             // 
             this.btnOK.Enabled = false;
-            this.btnOK.Location = new System.Drawing.Point(660, 416);
+            this.btnOK.Location = new System.Drawing.Point(657, 489);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(102, 41);
             this.btnOK.TabIndex = 8;
@@ -205,7 +187,9 @@
             // 
             // grpNhapSach
             // 
-            this.grpNhapSach.Controls.Add(this.btnThemTL);
+            this.grpNhapSach.BackColor = System.Drawing.Color.PowderBlue;
+            this.grpNhapSach.Controls.Add(this.label7);
+            this.grpNhapSach.Controls.Add(this.textBox1);
             this.grpNhapSach.Controls.Add(this.txtTacGia);
             this.grpNhapSach.Controls.Add(this.label6);
             this.grpNhapSach.Controls.Add(this.txtMaNV);
@@ -220,9 +204,9 @@
             this.grpNhapSach.Controls.Add(this.label4);
             this.grpNhapSach.Controls.Add(this.label3);
             this.grpNhapSach.Controls.Add(this.lblMaSach);
-            this.grpNhapSach.Location = new System.Drawing.Point(119, 61);
+            this.grpNhapSach.Location = new System.Drawing.Point(50, 61);
             this.grpNhapSach.Name = "grpNhapSach";
-            this.grpNhapSach.Size = new System.Drawing.Size(909, 323);
+            this.grpNhapSach.Size = new System.Drawing.Size(1087, 360);
             this.grpNhapSach.TabIndex = 10;
             this.grpNhapSach.TabStop = false;
             this.grpNhapSach.Text = "Thông tin nhập sách";
@@ -237,22 +221,37 @@
             this.lblTieuDe.TabIndex = 0;
             this.lblTieuDe.Text = "Nhập sách";
             // 
-            // frmAddBooks
+            // label7
             // 
-            this.AcceptButton = this.btnApply;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(544, 180);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 17);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Thể loại";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(701, 177);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(226, 23);
+            this.textBox1.TabIndex = 8;
+            // 
+            // frmNhapSach
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1170, 600);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnApply);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.grpNhapSach);
             this.Controls.Add(this.lblTieuDe);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmAddBooks";
+            this.Name = "frmNhapSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhập sách";
             this.grpNhapSach.ResumeLayout(false);
@@ -265,8 +264,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnApply;
-        private System.Windows.Forms.Button btnThemTL;
         private System.Windows.Forms.TextBox txtTacGia;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtMaNV;
@@ -284,5 +281,7 @@
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.GroupBox grpNhapSach;
         private System.Windows.Forms.Label lblTieuDe;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
