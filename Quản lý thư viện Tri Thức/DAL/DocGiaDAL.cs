@@ -75,6 +75,41 @@ namespace DAL
                 return false;
             }
         }
+
+        public bool xoaDocGia(string MaDG)
+        {
+            try
+            {
+                DocGia docGia = new DocGia();
+                docGia = data.DocGias.SingleOrDefault(u => u.MaDocGia == MaDG && u.TrangThai == true);
+                docGia.TrangThai = false;
+                data.SaveChanges();
+                return true;
+            }
+            catch(Exception)
+            {
+                return false;
+            }
+        }
+
+        public bool suaDocGia(DocGiaDTO docGiaDTO)
+        {
+            try 
+            {
+                DocGia docGia = new DocGia();
+                docGia = data.DocGias.SingleOrDefault(u => u.MaDocGia == docGiaDTO.MaDocGia && u.TrangThai == true);
+                docGia.TenDocGia = docGiaDTO.TenDocGia;
+                docGia.CMND = docGiaDTO.CMND;
+                docGia.DiaChi = docGiaDTO.DiaChi;
+
+                data.SaveChanges();
+                return true;
+            }
+            catch(Exception)
+            {
+                return false;
+            }
+        }
         
     }
 }

@@ -39,5 +39,15 @@ namespace BUS
         {
             return theThuVienDAL.themTheTV(theThuVienDTO);
         }
+
+        public bool xoaTheTV(string SoThe)
+        {
+            return theThuVienDAL.xoaTheThuVien(SoThe);
+        }
+
+        public bool suaTheTV (TheThuVienDTO theThuVienDTO)
+        {
+            return theThuVienDAL.suaTheThuVien(theThuVienDTO);
+        }
     }
 }

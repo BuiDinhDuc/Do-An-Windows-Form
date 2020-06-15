@@ -45,5 +45,15 @@ namespace BUS
         {
             return docgiaDAL.themDocGia(docGiaDTO);
         }
+
+        public bool xoaDocGia(string MaDG)
+        {
+            return docgiaDAL.xoaDocGia(MaDG);
+        }
+
+        public bool suaDocGia(DocGiaDTO docGiaDTO)
+        {
+            return docgiaDAL.suaDocGia(docGiaDTO);
+        }
     }
 }

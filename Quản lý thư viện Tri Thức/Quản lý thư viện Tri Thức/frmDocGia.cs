@@ -70,7 +70,51 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            if(theThuVienBUS.xoaTheTV(txtMaThe.Text) && docgiaBUS.xoaDocGia(txtMaDocGia.Text))
+            {
+                MessageBox.Show(Constrant.XoaThanhCong, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frmReaders_Load(sender, e);
+            }
+            else
+            {
+                MessageBox.Show(Constrant.XoaThatBai, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            DocGiaDTO docGiaDTO = new DocGiaDTO
+            {
+                MaDocGia = txtMaDocGia.Text,
+                TenDocGia = txtTenDocGia.Text,
+                CMND = txtCMND.Text,
+                DiaChi = txtDiaChi.Text
+
+            };
+
+            TheThuVienDTO theThuVienDTO = new TheThuVienDTO
+            {   
+                SoThe = txtMaThe.Text,
+                NgayBatDau = dtmNgayBD.Value };
+
+            if (docgiaBUS.suaDocGia(docGiaDTO) && theThuVienBUS.suaTheTV(theThuVienDTO))
+            {
+                MessageBox.Show(Constrant.SuaThanhCong, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frmReaders_Load(sender, e);
+            }
+            else
+                MessageBox.Show(Constrant.SuaThatBai, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtMaThe.Text = string.Empty;
+            txtTenDocGia.Text = string.Empty;
+            txtCMND.Text = string.Empty;
+            txtDiaChi.Text = string.Empty;
+            txtMaDocGia.Text = string.Empty;
+            dtmNgayBD.Value = DateTime.Now;
         }
     }
 }

@@ -42,8 +42,39 @@ namespace DAL
                 return false;
             }
 
+        }
 
-           
+        public bool xoaTheThuVien(string MaThe)
+        {
+            try
+            {
+                TheThuVien theThuVien = new TheThuVien();
+                theThuVien = data.TheThuViens.SingleOrDefault(u => u.SoThe == MaThe && u.TrangThai == true);
+
+                theThuVien.TrangThai = false;
+                data.SaveChanges();
+                return true;
+
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+  
+        }
+
+        public bool suaTheThuVien(TheThuVienDTO theThuVienDTO)
+        {
+            try
+            {
+                TheThuVien theThuVien = data.TheThuViens.SingleOrDefault(u => u.SoThe == theThuVienDTO.SoThe && u.TrangThai == true);
+                theThuVien.NgayBatDau = theThuVienDTO.NgayBatDau;
+                data.SaveChanges();
+                return true;
+            } catch(Exception)
+            {
+                return false;
+            }
         }
     }
 }
