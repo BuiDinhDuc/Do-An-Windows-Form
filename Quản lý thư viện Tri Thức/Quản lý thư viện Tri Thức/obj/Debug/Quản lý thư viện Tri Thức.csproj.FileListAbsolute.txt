@@ -67,18 +67,7 @@ D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quả
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\DAL.dll.config
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.csproj.CopyComplete
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\Microsoft.ReportViewer.Common.dll
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\Microsoft.SqlServer.Types.dll
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmChonXemThongKe.resources
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmXemBaoCao.resources
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\ADODB.dll

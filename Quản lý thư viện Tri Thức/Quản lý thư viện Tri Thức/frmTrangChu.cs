@@ -250,6 +250,17 @@ namespace Quản_lý_thư_viện_Tri_Thức
             fQuyDinh.Show();
         }
 
-        
+        private void nhậpSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNhapSach frmNhapSach = new frmNhapSach();
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+
+
+            frmNhapSach.MdiParent = this;
+            frmNhapSach.Show();
+        }
     }
 }

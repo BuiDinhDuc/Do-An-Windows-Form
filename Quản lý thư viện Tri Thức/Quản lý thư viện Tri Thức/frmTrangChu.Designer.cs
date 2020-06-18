@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.toolNhapSach = new System.Windows.Forms.ToolStripMenuItem();
+            this.nhậpSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thêmĐầuSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolMuonTra = new System.Windows.Forms.ToolStripMenuItem();
             this.toolQuanLiSach = new System.Windows.Forms.ToolStripMenuItem();
             this.toolDocGia = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,9 +50,6 @@
             this.lblName = new System.Windows.Forms.ToolStripStatusLabel();
             this.time = new System.Windows.Forms.Timer(this.components);
             this.lblTime = new System.Windows.Forms.Label();
-            this.nhậpSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thêmĐầuSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thêmThểLoạiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnusMenu.SuspendLayout();
             this.sttStatus.SuspendLayout();
             this.SuspendLayout();
@@ -60,11 +59,23 @@
             this.toolNhapSach.AutoSize = false;
             this.toolNhapSach.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nhậpSáchToolStripMenuItem,
-            this.thêmĐầuSáchToolStripMenuItem,
-            this.thêmThểLoạiToolStripMenuItem});
+            this.thêmĐầuSáchToolStripMenuItem});
             this.toolNhapSach.Name = "toolNhapSach";
             this.toolNhapSach.Size = new System.Drawing.Size(120, 54);
             this.toolNhapSach.Text = "Thêm sách";
+            // 
+            // nhậpSáchToolStripMenuItem
+            // 
+            this.nhậpSáchToolStripMenuItem.Name = "nhậpSáchToolStripMenuItem";
+            this.nhậpSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.nhậpSáchToolStripMenuItem.Text = "Nhập sách";
+            this.nhậpSáchToolStripMenuItem.Click += new System.EventHandler(this.nhậpSáchToolStripMenuItem_Click);
+            // 
+            // thêmĐầuSáchToolStripMenuItem
+            // 
+            this.thêmĐầuSáchToolStripMenuItem.Name = "thêmĐầuSáchToolStripMenuItem";
+            this.thêmĐầuSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.thêmĐầuSáchToolStripMenuItem.Text = "Thêm đầu sách";
             // 
             // toolMuonTra
             // 
@@ -225,24 +236,6 @@
             this.lblTime.Size = new System.Drawing.Size(125, 28);
             this.lblTime.TabIndex = 13;
             // 
-            // nhậpSáchToolStripMenuItem
-            // 
-            this.nhậpSáchToolStripMenuItem.Name = "nhậpSáchToolStripMenuItem";
-            this.nhậpSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.nhậpSáchToolStripMenuItem.Text = "Nhập sách";
-            // 
-            // thêmĐầuSáchToolStripMenuItem
-            // 
-            this.thêmĐầuSáchToolStripMenuItem.Name = "thêmĐầuSáchToolStripMenuItem";
-            this.thêmĐầuSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.thêmĐầuSáchToolStripMenuItem.Text = "Thêm đầu sách";
-            // 
-            // thêmThểLoạiToolStripMenuItem
-            // 
-            this.thêmThểLoạiToolStripMenuItem.Name = "thêmThểLoạiToolStripMenuItem";
-            this.thêmThểLoạiToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.thêmThểLoạiToolStripMenuItem.Text = "Thêm thể loại";
-            // 
             // frmTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -289,7 +282,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolQuyDinh;
         private System.Windows.Forms.ToolStripMenuItem nhậpSáchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thêmĐầuSáchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem thêmThểLoạiToolStripMenuItem;
     }
 }
 
