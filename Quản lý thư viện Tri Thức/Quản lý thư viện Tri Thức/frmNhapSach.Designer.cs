@@ -181,6 +181,7 @@
             this.btnOK.TabIndex = 8;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // grpNhapSach
             // 
@@ -261,7 +262,6 @@
             this.label7.Size = new System.Drawing.Size(59, 17);
             this.label7.TabIndex = 7;
             this.label7.Text = "Thể loại";
-  
             // 
             // txtTheLoai
             // 
@@ -270,7 +270,6 @@
             this.txtTheLoai.ReadOnly = true;
             this.txtTheLoai.Size = new System.Drawing.Size(226, 23);
             this.txtTheLoai.TabIndex = 8;
-
             // 
             // lblTieuDe
             // 

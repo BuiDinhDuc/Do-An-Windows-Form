@@ -154,5 +154,12 @@ namespace Quản_lý_thư_viện_Tri_Thức
                 }
             }
         }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

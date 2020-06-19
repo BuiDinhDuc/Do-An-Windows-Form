@@ -112,5 +112,33 @@ namespace DAL
                                          ).ToList();
             return ketqua;
         }
+
+        public bool AddBook(SachDTO sachDTO)
+        {
+            try
+            {
+                Sach sach = new Sach();
+
+                sach.MaSach = sachDTO.MaSach;
+                sach.TenSach = sachDTO.TenSach;
+                sach.MaDauSach = sachDTO.MaDauSach;
+                sach.TenTacGia = sachDTO.TenTacGia;
+                sach.TenNhaXuatBan = sachDTO.TenNhaXuatBan;
+                sach.NamXuatBan = sachDTO.NamXuatBan;
+                sach.TrangThai = sachDTO.TrangThai;
+                sach.SoLuong = sachDTO.SoLuong;
+                sach.SachHiem = sachDTO.SachHiem;
+                sach.DonGia = sachDTO.DonGia;
+
+                data.Saches.Add(sach);
+                data.SaveChanges();
+
+                return true;
+            }catch(Exception)
+            {
+                return false;
+            }
+        }
+
     }
 }
