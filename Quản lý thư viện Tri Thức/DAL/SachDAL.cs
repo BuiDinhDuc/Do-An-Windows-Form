@@ -139,6 +139,25 @@ namespace DAL
                 return false;
             }
         }
+        public bool ThemSachCu(string MaSach, int SoLuongThem)
+        {
+            try
+            {
+                Sach sach = new Sach();
+                sach = data.Saches.SingleOrDefault(u => u.MaSach == MaSach && u.TrangThai == true);
+                sach.SoLuong += SoLuongThem;
+                data.SaveChanges();
+                return true;
+            } catch(Exception)
+            {
+                return false;
+            }
+        }
+
+        public int DemSo()
+        {
+            return data.Saches.Count() + 1;
+        }
 
     }
 }

@@ -38,5 +38,34 @@ namespace BUS
         {
             return sachDAL.SearchBook(tieuchi);
         }
+
+        public bool ThemSachMoi(SachDTO sachDTO)
+        {
+            return sachDAL.AddBook(sachDTO);
+        }
+
+        public bool NhapThemSachCu(string MaSach, int SoLuongThem)
+        {
+            return sachDAL.ThemSachCu(MaSach, SoLuongThem);
+        }
+
+        public string PhatSinhMa()
+        {
+            string Ma = "Sa";
+            int so = sachDAL.DemSo();
+
+            int idem = 0;
+            foreach (char i in so.ToString())
+            {
+                idem++;
+            }
+
+            for (int j = 0; j < 8 - idem; j++)
+            {
+                Ma += "0";
+            }
+
+            return Ma + so.ToString();
+        }
     }
 }

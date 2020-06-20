@@ -59,6 +59,7 @@
     <Compile Include="CTNhapSach.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
+    <Compile Include="CTNhapSachDAL.cs" />
     <Compile Include="CTTraSach.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
@@ -80,6 +81,7 @@
     <Compile Include="NhapSach.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
+    <Compile Include="NhapSachDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuanLyThuVien.Context.cs">
       <AutoGen>True</AutoGen>

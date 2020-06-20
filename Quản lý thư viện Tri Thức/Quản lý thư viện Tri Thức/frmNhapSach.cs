@@ -18,6 +18,9 @@ namespace Quản_lý_thư_viện_Tri_Thức
         SachBUS sachBUS = new SachBUS();
         TheLoaiBUS theLoaiBUS = new TheLoaiBUS();
         DauSachBUS dauSachBUS = new DauSachBUS();
+        NhapSachBUS nhapSachBUS = new NhapSachBUS();
+
+        public static string MaNhap = string.Empty;
         public frmNhapSach()
         {
             InitializeComponent();
@@ -29,9 +32,10 @@ namespace Quản_lý_thư_viện_Tri_Thức
         {
             rdoNhapMoi.Checked = true;
             NhapSachMoi();
-
+            MaNhap = nhapSachBUS.phatSinhMa();
             dtgv_Sach.AutoGenerateColumns = false;
             dtgv_Sach.DataSource = sachBUS.LayDSSach();
+            txtMaNhap.Text = MaNhap;
 
             //
             cbbDauSach.DataSource = dauSachBUS.LayDSDauSach();
@@ -43,6 +47,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         public void NhapSachMoi()
         {
+            txtMaNhap.ReadOnly = true;
             txtGiaTien.ReadOnly = false;
             txtMaSach.ReadOnly = true;
             txtNamXB.ReadOnly = false;
@@ -50,16 +55,16 @@ namespace Quản_lý_thư_viện_Tri_Thức
             txtSach.ReadOnly = false;
             txtSoLuong.ReadOnly = false;
             txtTacGia.ReadOnly = false;
-            txtTheLoai.ReadOnly = false;
+            
 
+            txtMaSach.Text = sachBUS.PhatSinhMa();
             txtGiaTien.Text = string.Empty;
-            txtMaSach.Text = string.Empty;
             txtNamXB.Text = string.Empty;
             txtNXB.Text = string.Empty;
             txtSach.Text = string.Empty;
             txtSoLuong.Text = string.Empty;
             txtTacGia.Text = string.Empty;
-            txtTheLoai.Text = string.Empty;
+          
             
             chkSachHiem.Checked = false;
 
@@ -67,6 +72,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         public void NhapThemSach()
         {
+            txtMaNhap.ReadOnly = true;
             txtGiaTien.ReadOnly = true;
             txtMaSach.ReadOnly = true;
             txtNamXB.ReadOnly = true;
@@ -74,7 +80,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
             txtSach.ReadOnly = true;
             txtSoLuong.ReadOnly = false;
             txtTacGia.ReadOnly = true;
-            txtTheLoai.ReadOnly = true;
+        
             label6.Text = "Số lượng nhập thêm";
 
         }
@@ -105,7 +111,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
                     txtTacGia.Text = sachDTO.TenTacGia;
                     cbbDauSach.SelectedValue = sachDTO.MaDauSach;
 
-                    txtTheLoai.Text = theLoaiBUS.timTheLoai(sachDTO.MaTheLoai).TenTheLoai;
+                   
 
                     if (sachDTO.SachHiem)
                     {
@@ -143,7 +149,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
                     txtTacGia.Text = sachDTO.TenTacGia;
                     cbbDauSach.SelectedValue = sachDTO.MaDauSach;
 
-                    txtTheLoai.Text = theLoaiBUS.timTheLoai(sachDTO.MaTheLoai).TenTheLoai;
+                   
 
                     if (sachDTO.SachHiem)
                     {
@@ -157,9 +163,69 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+            if(rdoNhapMoi.Checked)
+            {
+                SachDTO sachDTO = new SachDTO();
+                sachDTO.MaSach = txtMaSach.Text;
+                sachDTO.TenSach = txtSach.Text;
+                sachDTO.MaDauSach = cbbDauSach.SelectedValue.ToString();
+                sachDTO.TenTacGia = txtTacGia.Text;
+                sachDTO.TenNhaXuatBan = txtNXB.Text;
+                sachDTO.NamXuatBan = int.Parse(txtNamXB.Text);
+                sachDTO.DonGia = int.Parse(txtGiaTien.Text);
+                sachDTO.TrangThai = true;
+
+                if (chkSachHiem.Checked) sachDTO.SachHiem = true;
+                else
+                    sachDTO.SachHiem = false;
+                sachDTO.SoLuong = int.Parse(txtSoLuong.Text);
+
+                if (sachBUS.ThemSachMoi(sachDTO))
+                {
+                    MessageBox.Show(Constrant.ThemThanhCong, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    frmNhapSach_Load(sender, e);
+                }
+                else
+                    MessageBox.Show(Constrant.ThemThatBai, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+            if(rdoNhapThem.Checked)
+            {
+                if (sachBUS.NhapThemSachCu(txtMaSach.Text, int.Parse(txtSoLuong.Text)))
+                {
+                    MessageBox.Show(Constrant.ThemThanhCong, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    frmNhapSach_Load(sender, e);
+                }
+                else
+                    MessageBox.Show(Constrant.ThemThatBai, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
-        
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MaNhap = string.Empty;
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (txtTimTenSach.Text != null)
+
+                dtgv_Sach.DataSource = sachBUS.SearchBook(txtTimTenSach.Text);
+            else
+                frmNhapSach_Load(sender, e);
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
