@@ -65,7 +65,7 @@
     <Property Name="NgayMuon" Type="date" />
     <Property Name="NgayPhaiTra" Type="date" />
     <Property Name="TrangThai" Type="bit" />
-    <Property Name="TienPhat" Type="int" />
+    <Property Name="TienCoc" Type="int" />
   </EntityType>
   <EntityType Name="NhanVien">
     <Key>
@@ -104,6 +104,16 @@
     <Property Name="TrangThai" Type="bit" />
     <Property Name="SoLuong" Type="int" />
     <Property Name="SachHiem" Type="bit" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
   <EntityType Name="TheLoai">
     <Key>
@@ -296,6 +306,7 @@
     <EntitySet Name="NhanVien" EntityType="Self.NhanVien" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="NhapSach" EntityType="Self.NhapSach" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Sach" EntityType="Self.Sach" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TheLoai" EntityType="Self.TheLoai" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TheThuVien" EntityType="Self.TheThuVien" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TraSach" EntityType="Self.TraSach" Schema="dbo" store:Type="Tables" />

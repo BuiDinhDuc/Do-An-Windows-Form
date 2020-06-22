@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CTMuonSachBUS.cs" />
     <Compile Include="CTNhapSachBUS.cs" />
     <Compile Include="DauSachBUS.cs" />
     <Compile Include="DocGiaBUS.cs" />

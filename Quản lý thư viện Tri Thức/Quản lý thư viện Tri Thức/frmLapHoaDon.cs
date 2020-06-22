@@ -24,16 +24,21 @@ namespace Quản_lý_thư_viện_Tri_Thức
             List<SachDTO> sachDTOs = new List<SachDTO>();
             sachDTOs = frmMuonSach.sach;
             double Tongtien = 0;
+            int idem = 0;
             foreach (SachDTO s in sachDTOs)
             {
                 ListViewItem item = new ListViewItem();
 
                 item.Text = s.TenSach;
                 item.SubItems.Add(s.TenTacGia);
-                double tien = (double)s.DonGia * 0.2;
+                double tien = (double)s.DonGia * 0.2 * frmMuonSach.soluong[idem];
+                int soLuong = s.SoLuong;
+                item.SubItems.Add(frmMuonSach.soluong[idem].ToString());
+                item.SubItems.Add(s.DonGia.ToString());
                 item.SubItems.Add(tien.ToString());
                 lsvSach.Items.Add(item);
                 Tongtien += tien;
+                idem++;
             }
             txtTongTien.Text = Tongtien.ToString();
 
@@ -42,9 +47,14 @@ namespace Quản_lý_thư_viện_Tri_Thức
             txtMaMuon.Text = muonSachBUS.phatSinhMa();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnHuy_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,5 +29,10 @@ namespace BUS
 
             return Ma + so.ToString();
         }
+
+        public bool ThemMuonSach(MuonSachDTO muonSachDTO)
+        {
+            return muonSachDAO.ThemMuonSach(muonSachDTO);
+        }
     }
 }

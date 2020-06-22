@@ -74,11 +74,11 @@
     <Property Name="NgayMuon" Type="DateTime" Precision="0" />
     <Property Name="NgayPhaiTra" Type="DateTime" Precision="0" />
     <Property Name="TrangThai" Type="Boolean" />
-    <Property Name="TienPhat" Type="Int32" />
     <NavigationProperty Name="CTMuonSaches" Relationship="Self.fk_CTMuonSach_MuonSach" FromRole="MuonSach" ToRole="CTMuonSach" />
     <NavigationProperty Name="NhanVien" Relationship="Self.fk_MuonSach_NhanVien" FromRole="MuonSach" ToRole="NhanVien" />
     <NavigationProperty Name="TheThuVien" Relationship="Self.fk_MuonSach_TheThuVien" FromRole="MuonSach" ToRole="TheThuVien" />
     <NavigationProperty Name="TraSaches" Relationship="Self.fk_TraSach_MuonSach" FromRole="MuonSach" ToRole="TraSach" />
+    <Property Name="TienCoc" Type="Int32" />
   </EntityType>
   <EntityType Name="NhanVien">
     <Key>
@@ -377,5 +377,16 @@
       <End Role="NhanVien" EntitySet="NhanViens" />
       <End Role="NhapSach" EntitySet="NhapSaches" />
     </AssociationSet>
+    <EntitySet Name="sysdiagrams" EntityType="QuanLyThuVienModel.sysdiagram" />
   </EntityContainer>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
 </Schema>

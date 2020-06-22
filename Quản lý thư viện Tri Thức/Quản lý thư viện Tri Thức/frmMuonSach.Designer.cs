@@ -38,11 +38,13 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnLapHoaDon = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
-            this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.nudSoLuong = new System.Windows.Forms.NumericUpDown();
+            this.colSL = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).BeginInit();
             this.SuspendLayout();
             // 
             // lsvSach
@@ -73,7 +75,7 @@
             // 
             // btnTraLai
             // 
-            this.btnTraLai.Location = new System.Drawing.Point(548, 322);
+            this.btnTraLai.Location = new System.Drawing.Point(520, 311);
             this.btnTraLai.Name = "btnTraLai";
             this.btnTraLai.Size = new System.Drawing.Size(73, 41);
             this.btnTraLai.TabIndex = 23;
@@ -83,9 +85,9 @@
             // 
             // btnChoMuon
             // 
-            this.btnChoMuon.Location = new System.Drawing.Point(548, 239);
+            this.btnChoMuon.Location = new System.Drawing.Point(580, 239);
             this.btnChoMuon.Name = "btnChoMuon";
-            this.btnChoMuon.Size = new System.Drawing.Size(73, 41);
+            this.btnChoMuon.Size = new System.Drawing.Size(73, 43);
             this.btnChoMuon.TabIndex = 22;
             this.btnChoMuon.Text = ">";
             this.btnChoMuon.UseVisualStyleBackColor = true;
@@ -94,11 +96,12 @@
             // lstSachMuon
             // 
             this.lstSachMuon.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colTenSach});
+            this.colTenSach,
+            this.colSL});
             this.lstSachMuon.HideSelection = false;
             this.lstSachMuon.Location = new System.Drawing.Point(673, 228);
             this.lstSachMuon.Name = "lstSachMuon";
-            this.lstSachMuon.Size = new System.Drawing.Size(400, 200);
+            this.lstSachMuon.Size = new System.Drawing.Size(417, 200);
             this.lstSachMuon.TabIndex = 21;
             this.lstSachMuon.UseCompatibleStateImageBehavior = false;
             this.lstSachMuon.View = System.Windows.Forms.View.Details;
@@ -137,14 +140,6 @@
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
-            // txtSoLuong
-            // 
-            this.txtSoLuong.Location = new System.Drawing.Point(535, 405);
-            this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.ReadOnly = true;
-            this.txtSoLuong.Size = new System.Drawing.Size(100, 23);
-            this.txtSoLuong.TabIndex = 32;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -166,7 +161,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(545, 385);
+            this.label6.Location = new System.Drawing.Point(494, 238);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 17);
             this.label6.TabIndex = 38;
@@ -183,16 +178,38 @@
             this.label1.TabIndex = 39;
             this.label1.Text = "Mượn sách";
             // 
+            // nudSoLuong
+            // 
+            this.nudSoLuong.Location = new System.Drawing.Point(502, 259);
+            this.nudSoLuong.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudSoLuong.Name = "nudSoLuong";
+            this.nudSoLuong.Size = new System.Drawing.Size(47, 23);
+            this.nudSoLuong.TabIndex = 40;
+            this.nudSoLuong.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // colSL
+            // 
+            this.colSL.Text = "Số lượng";
+            this.colSL.Width = 80;
+            // 
             // frmMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1170, 600);
+            this.Controls.Add(this.nudSoLuong);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtSoLuong);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnLapHoaDon);
             this.Controls.Add(this.btnTimKiem);
@@ -208,6 +225,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Borrow Books";
             this.Load += new System.EventHandler(this.frmBorrowBooks_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,12 +241,13 @@
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Button btnLapHoaDon;
         private System.Windows.Forms.Button btnHuy;
-        private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ColumnHeader colTen;
         private System.Windows.Forms.ColumnHeader colTenSach;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown nudSoLuong;
+        private System.Windows.Forms.ColumnHeader colSL;
     }
 }

@@ -23,12 +23,12 @@ D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\b
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.dll
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.SqlServer.dll
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DAL.pdb
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DAL.dll.config
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DTO.pdb
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DTO.dll.config
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.xml
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.SqlServer.xml
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.dll
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.pdb
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DAL.dll.config
-D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DTO.dll.config
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.dll
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.pdb

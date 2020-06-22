@@ -37,5 +37,6 @@ namespace DAL
         public virtual DbSet<TheLoai> TheLoais { get; set; }
         public virtual DbSet<TheThuVien> TheThuViens { get; set; }
         public virtual DbSet<TraSach> TraSaches { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     }
 }

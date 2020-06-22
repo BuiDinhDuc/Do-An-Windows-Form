@@ -16,6 +16,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
     {
         SachBUS sachBUS = new SachBUS();
         public static List<SachDTO> sach = new List<SachDTO>();
+        public static List<int> soluong = new List<int>();
         public frmMuonSach()
         {
             InitializeComponent();
@@ -49,13 +50,14 @@ namespace Quản_lý_thư_viện_Tri_Thức
                 {
                     ListViewItem x = new ListViewItem();
                     x.Text = item.Text;
+                    x.SubItems.Add(nudSoLuong.Value.ToString());
 
                     if (KtraDaThem(x))
                     {
                         lstSachMuon.Items.Add(x);
+                        
                         lsvSach.Items.Remove(item);
-
-                        txtSoLuong.Text = lstSachMuon.Items.Count.ToString();
+                        
                     }
                     else return;
                 }
@@ -101,7 +103,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
                         lsvSach.Items.Add(x);
                         lstSachMuon.Items.Remove(item);
 
-                        txtSoLuong.Text = lstSachMuon.Items.Count.ToString();
+                       
                     }
                     else return;
                 }
@@ -146,6 +148,11 @@ namespace Quản_lý_thư_viện_Tri_Thức
             }
 
             sach = sachBUS.LayDSSachDuocChon(listsach);
+
+            foreach (ListViewItem listViewItem in lstSachMuon.Items)
+            {
+                soluong.Add( int.Parse(listViewItem.SubItems[1].Text.ToString()));
+            }
 
 
             frmLapHoaDon frmLapHoaDon = new frmLapHoaDon();

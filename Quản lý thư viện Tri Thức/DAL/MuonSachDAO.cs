@@ -20,6 +20,16 @@ namespace DAL
             {
                 MuonSach muonSach = new MuonSach();
                 muonSach.MaMuon = muonSachDTO.MaMuon;
+                muonSach.SoThe = muonSachDTO.SoThe;
+                muonSach.MaNV = muonSachDTO.MaNV;
+                muonSach.NgayMuon = muonSachDTO.NgayMuon;
+                muonSach.NgayPhaiTra = muonSach.NgayPhaiTra;
+                muonSach.TrangThai = true;
+                muonSach.TienCoc = muonSachDTO.TienCoc;
+
+                data.MuonSaches.Add(muonSach);
+
+                data.SaveChanges();
 
                 return true;
             }catch(Exception)

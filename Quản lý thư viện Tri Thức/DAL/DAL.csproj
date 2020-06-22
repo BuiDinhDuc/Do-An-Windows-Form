@@ -56,6 +56,7 @@
     <Compile Include="CTMuonSach.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
+    <Compile Include="CTMuonSachDAL.cs" />
     <Compile Include="CTNhapSach.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
@@ -103,6 +104,9 @@
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
     <Compile Include="SachDAL.cs" />
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>QuanLyThuVien.tt</DependentUpon>
+    </Compile>
     <Compile Include="TheLoai.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>

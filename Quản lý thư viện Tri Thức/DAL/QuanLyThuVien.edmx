@@ -70,7 +70,7 @@
           <Property Name="NgayMuon" Type="date" />
           <Property Name="NgayPhaiTra" Type="date" />
           <Property Name="TrangThai" Type="bit" />
-          <Property Name="TienPhat" Type="int" />
+          <Property Name="TienCoc" Type="int" />
         </EntityType>
         <EntityType Name="NhanVien">
           <Key>
@@ -109,6 +109,16 @@
           <Property Name="TrangThai" Type="bit" />
           <Property Name="SoLuong" Type="int" />
           <Property Name="SachHiem" Type="bit" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
         <EntityType Name="TheLoai">
           <Key>
@@ -301,6 +311,7 @@
           <EntitySet Name="NhanVien" EntityType="Self.NhanVien" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NhapSach" EntityType="Self.NhapSach" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Sach" EntityType="Self.Sach" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TheLoai" EntityType="Self.TheLoai" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TheThuVien" EntityType="Self.TheThuVien" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TraSach" EntityType="Self.TraSach" Schema="dbo" store:Type="Tables" />
@@ -435,11 +446,11 @@
           <Property Name="NgayMuon" Type="DateTime" Precision="0" />
           <Property Name="NgayPhaiTra" Type="DateTime" Precision="0" />
           <Property Name="TrangThai" Type="Boolean" />
-          <Property Name="TienPhat" Type="Int32" />
           <NavigationProperty Name="CTMuonSaches" Relationship="Self.fk_CTMuonSach_MuonSach" FromRole="MuonSach" ToRole="CTMuonSach" />
           <NavigationProperty Name="NhanVien" Relationship="Self.fk_MuonSach_NhanVien" FromRole="MuonSach" ToRole="NhanVien" />
           <NavigationProperty Name="TheThuVien" Relationship="Self.fk_MuonSach_TheThuVien" FromRole="MuonSach" ToRole="TheThuVien" />
           <NavigationProperty Name="TraSaches" Relationship="Self.fk_TraSach_MuonSach" FromRole="MuonSach" ToRole="TraSach" />
+          <Property Name="TienCoc" Type="Int32" />
         </EntityType>
         <EntityType Name="NhanVien">
           <Key>
@@ -738,7 +749,18 @@
             <End Role="NhanVien" EntitySet="NhanViens" />
             <End Role="NhapSach" EntitySet="NhapSaches" />
           </AssociationSet>
+          <EntitySet Name="sysdiagrams" EntityType="QuanLyThuVienModel.sysdiagram" />
         </EntityContainer>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -805,13 +827,13 @@
           <EntitySetMapping Name="MuonSaches">
             <EntityTypeMapping TypeName="QuanLyThuVienModel.MuonSach">
               <MappingFragment StoreEntitySet="MuonSach">
+                <ScalarProperty Name="TienCoc" ColumnName="TienCoc" />
                 <ScalarProperty Name="MaMuon" ColumnName="MaMuon" />
                 <ScalarProperty Name="SoThe" ColumnName="SoThe" />
                 <ScalarProperty Name="MaNV" ColumnName="MaNV" />
                 <ScalarProperty Name="NgayMuon" ColumnName="NgayMuon" />
                 <ScalarProperty Name="NgayPhaiTra" ColumnName="NgayPhaiTra" />
                 <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
-                <ScalarProperty Name="TienPhat" ColumnName="TienPhat" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -881,6 +903,17 @@
                 <ScalarProperty Name="NgayLap" ColumnName="NgayLap" />
                 <ScalarProperty Name="MaMuon" ColumnName="MaMuon" />
                 <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="QuanLyThuVienModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

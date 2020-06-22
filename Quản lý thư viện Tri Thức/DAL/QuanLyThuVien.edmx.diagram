@@ -30,6 +30,7 @@
         <AssociationConnector Association="QuanLyThuVienModel.fk_MuonSach_TheThuVien" ManuallyRouted="false" />
         <AssociationConnector Association="QuanLyThuVienModel.fk_TraSach_MuonSach" ManuallyRouted="false" />
         <AssociationConnector Association="QuanLyThuVienModel.fk_NhapSach_NhanVien" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
