@@ -13,7 +13,7 @@ namespace BUS
     {
         NhanVienDAL nhanvienDAL = new NhanVienDAL();
 
-        public bool KtraDangNhap(string username,string password, ref string NameofUser,ref int PhanQuyen)
+        public bool KtraDangNhap(string username,string password, ref string NameofUser,ref int PhanQuyen,ref string MaNV)
         {
             List<NhanVienDTO> dsNhanVien = new List<NhanVienDTO>();
             dsNhanVien = nhanvienDAL.LayDSNhanVien();
@@ -24,6 +24,7 @@ namespace BUS
                 {
                     NameofUser = i.HoTenNV;
                     PhanQuyen = i.Quyen;
+                    MaNV = i.MaNV;
                     return true;
                 }
 

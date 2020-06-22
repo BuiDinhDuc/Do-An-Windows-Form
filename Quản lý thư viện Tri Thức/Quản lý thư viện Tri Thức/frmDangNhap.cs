@@ -15,7 +15,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
     public partial class frmDangNhap : Form
     {
         NhanVienBUS nhanvienBUS = new NhanVienBUS();
-        
+        public static string MaNV = string.Empty;
         public frmDangNhap()
         {
             InitializeComponent();
@@ -23,7 +23,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            if (nhanvienBUS.KtraDangNhap(txtUsername.Text, txtPassword.Text, ref frmTrangChu.NameofUser, ref frmTrangChu.PhanQuyen))
+            if (nhanvienBUS.KtraDangNhap(txtUsername.Text, txtPassword.Text, ref frmTrangChu.NameofUser, ref frmTrangChu.PhanQuyen,ref MaNV))
             {
                 MessageBox.Show(Constrant.DangNhapThanhCong,Constrant.ThongBao,MessageBoxButtons.OK,MessageBoxIcon.Information);
                 this.Close();

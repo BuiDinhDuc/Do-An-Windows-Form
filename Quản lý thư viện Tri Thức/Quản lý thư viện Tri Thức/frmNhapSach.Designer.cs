@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnLamMoi = new System.Windows.Forms.Button();
             this.txtTacGia = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNamXB = new System.Windows.Forms.TextBox();
@@ -43,6 +43,8 @@
             this.lblMaSach = new System.Windows.Forms.Label();
             this.btnOK = new System.Windows.Forms.Button();
             this.grpNhapSach = new System.Windows.Forms.GroupBox();
+            this.txtMaNhap = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.chkSachHiem = new System.Windows.Forms.CheckBox();
             this.txtGiaTien = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -59,22 +61,20 @@
             this.rdoNhapMoi = new System.Windows.Forms.RadioButton();
             this.txtTimTenSach = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
-            this.txtMaNhap = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.grpNhapSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Sach)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnCancel
+            // btnLamMoi
             // 
-            this.btnCancel.Location = new System.Drawing.Point(281, 343);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(102, 41);
-            this.btnCancel.TabIndex = 10;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.btnLamMoi.Location = new System.Drawing.Point(281, 343);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(102, 41);
+            this.btnLamMoi.TabIndex = 10;
+            this.btnLamMoi.Text = "Làm mới";
+            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // txtTacGia
             // 
@@ -193,7 +193,7 @@
             this.grpNhapSach.Controls.Add(this.txtGiaTien);
             this.grpNhapSach.Controls.Add(this.label6);
             this.grpNhapSach.Controls.Add(this.txtSoLuong);
-            this.grpNhapSach.Controls.Add(this.btnCancel);
+            this.grpNhapSach.Controls.Add(this.btnLamMoi);
             this.grpNhapSach.Controls.Add(this.label9);
             this.grpNhapSach.Controls.Add(this.btnOK);
             this.grpNhapSach.Controls.Add(this.txtTacGia);
@@ -214,6 +214,25 @@
             this.grpNhapSach.TabIndex = 10;
             this.grpNhapSach.TabStop = false;
             this.grpNhapSach.Text = "Thông tin nhập sách";
+            // 
+            // txtMaNhap
+            // 
+            this.txtMaNhap.Location = new System.Drawing.Point(156, 43);
+            this.txtMaNhap.Name = "txtMaNhap";
+            this.txtMaNhap.ReadOnly = true;
+            this.txtMaNhap.Size = new System.Drawing.Size(226, 23);
+            this.txtMaNhap.TabIndex = 12;
+           
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(21, 46);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 17);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Mã nhập";
+            
             // 
             // chkSachHiem
             // 
@@ -364,25 +383,6 @@
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
-            // txtMaNhap
-            // 
-            this.txtMaNhap.Location = new System.Drawing.Point(156, 43);
-            this.txtMaNhap.Name = "txtMaNhap";
-            this.txtMaNhap.ReadOnly = true;
-            this.txtMaNhap.Size = new System.Drawing.Size(226, 23);
-            this.txtMaNhap.TabIndex = 12;
-            this.txtMaNhap.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(21, 46);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 17);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Mã nhập";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
             // frmNhapSach
             // 
             this.AcceptButton = this.btnOK;
@@ -415,7 +415,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.TextBox txtTacGia;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtNamXB;

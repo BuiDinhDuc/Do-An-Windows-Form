@@ -19,8 +19,9 @@ namespace Quản_lý_thư_viện_Tri_Thức
         TheLoaiBUS theLoaiBUS = new TheLoaiBUS();
         DauSachBUS dauSachBUS = new DauSachBUS();
         NhapSachBUS nhapSachBUS = new NhapSachBUS();
+        CTNhapSachBUS cTNhapSachBUS = new CTNhapSachBUS();
 
-        public static string MaNhap = string.Empty;
+        public string MaNhap = string.Empty;
         public frmNhapSach()
         {
             InitializeComponent();
@@ -163,6 +164,29 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+
+            NhapSachDTO nhapSachDTO = new NhapSachDTO {
+
+                MaNhap = txtMaNhap.Text,
+                MaNV = frmDangNhap.MaNV,
+                NgayNhap = DateTime.Now,
+                ThanhTien = 0,
+                TrangThai = true
+   
+            };
+
+
+            CTNhapSachDTO cTNhapSachDTO = new CTNhapSachDTO {
+
+                MaNhap = txtMaNhap.Text,
+                MaSach = txtMaSach.Text,
+                SoLuong = int.Parse(txtSoLuong.Text),
+                DonGia = int.Parse(txtGiaTien.Text)
+
+            };
+
+         
+
             if(rdoNhapMoi.Checked)
             {
                 SachDTO sachDTO = new SachDTO();
@@ -180,7 +204,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
                     sachDTO.SachHiem = false;
                 sachDTO.SoLuong = int.Parse(txtSoLuong.Text);
 
-                if (sachBUS.ThemSachMoi(sachDTO))
+                if (sachBUS.ThemSachMoi(sachDTO) && nhapSachBUS.NhapSach(nhapSachDTO) && cTNhapSachBUS.ThemCTNhapSach(cTNhapSachDTO))
                 {
                     MessageBox.Show(Constrant.ThemThanhCong, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     frmNhapSach_Load(sender, e);
@@ -192,7 +216,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
             if(rdoNhapThem.Checked)
             {
-                if (sachBUS.NhapThemSachCu(txtMaSach.Text, int.Parse(txtSoLuong.Text)))
+                if (sachBUS.NhapThemSachCu(txtMaSach.Text, int.Parse(txtSoLuong.Text)) && nhapSachBUS.NhapSach(nhapSachDTO) && cTNhapSachBUS.ThemCTNhapSach(cTNhapSachDTO))
                 {
                     MessageBox.Show(Constrant.ThemThanhCong, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     frmNhapSach_Load(sender, e);
@@ -205,7 +229,13 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            txtMaSach.Text = sachBUS.PhatSinhMa();
+            txtGiaTien.Text = string.Empty;
+            txtNamXB.Text = string.Empty;
+            txtNXB.Text = string.Empty;
+            txtSach.Text = string.Empty;
+            txtSoLuong.Text = string.Empty;
+            txtTacGia.Text = string.Empty;
             MaNhap = string.Empty;
         }
 
@@ -218,14 +248,6 @@ namespace Quản_lý_thư_viện_Tri_Thức
                 frmNhapSach_Load(sender, e);
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

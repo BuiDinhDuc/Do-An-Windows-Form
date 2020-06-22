@@ -16,5 +16,15 @@ namespace Quản_lý_thư_viện_Tri_Thức
         {
             InitializeComponent();
         }
+
+        private void btnXacNhan_Click(object sender, EventArgs e)
+        {
+            //if (txtNewPassword.Text != txtReNewPassword.Text)
+            //    MessageBox.Show(Constrant.MatKhauTrungNhau,Constrant.ThongBao,MessageBoxButtons.OK,MessageBoxIcon.Error);
+            //else
+            //{
+            //    if()
+            //}
+        }
     }
 }

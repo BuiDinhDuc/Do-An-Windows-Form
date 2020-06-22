@@ -24,11 +24,12 @@ namespace DAL
                 nhapSach.MaNhap = nhapSachDTO.MaNhap;
                 nhapSach.MaNV = nhapSachDTO.MaNV;
                 nhapSach.NgayNhap = nhapSachDTO.NgayNhap;
-                nhapSach.ThanhTien = nhapSachDTO.ThanhTien;
+                nhapSach.ThanhTien = 0;
                 nhapSach.TrangThai = true;
                 data.NhapSaches.Add(nhapSach);
                 data.SaveChanges();
 
+              
                 return true;
             }
             catch(Exception)
@@ -36,6 +37,9 @@ namespace DAL
                 return false;
             }
         }
+
+        
+    
 
     }
 }
