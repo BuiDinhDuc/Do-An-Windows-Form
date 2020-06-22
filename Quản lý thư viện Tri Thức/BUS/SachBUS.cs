@@ -67,5 +67,15 @@ namespace BUS
 
             return Ma + so.ToString();
         }
+
+        public List<SachDTO> SearchBookWithName(string ten)
+        {
+            return sachDAL.SearchBookWithName(ten);
+        }
+
+        public List<SachDTO> LayDSSachDuocChon(List<string> ds)
+        {
+            return sachDAL.LayDSDuocChon(ds);
+        }
     }
 }

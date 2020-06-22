@@ -70,3 +70,5 @@ D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quả
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\BUS.dll.config
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\DTO.dll.config
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.csproj.CopyComplete
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\DAL.dll.config
+D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmLapHoaDon.resources

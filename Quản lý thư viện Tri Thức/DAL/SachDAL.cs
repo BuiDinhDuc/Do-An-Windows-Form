@@ -159,5 +159,63 @@ namespace DAL
             return data.Saches.Count() + 1;
         }
 
+        public List<SachDTO> SearchBookWithName(string tieuchi)
+        {
+
+            List<SachDTO> ketqua = new List<SachDTO>();
+            ketqua = data.Saches.Where(c => c.TenSach.Contains(tieuchi) && c.TrangThai.Value == true).Select(c => new SachDTO
+                                                  {
+
+                                                      MaSach = c.MaSach,
+                                                      MaDauSach = c.MaDauSach,
+                                                      TenSach = c.TenSach,
+                                                      MaTheLoai = c.DauSach.MaTheLoai,
+                                                      TenTacGia = c.TenTacGia,
+                                                      TenNhaXuatBan = c.TenNhaXuatBan,
+                                                      NamXuatBan = c.NamXuatBan.Value,
+                                                      TrangThai = c.TrangThai.Value,
+                                                      SoLuong = c.SoLuong.Value,
+                                                      SachHiem = c.SachHiem.Value,
+                                                      DonGia = (int)c.DonGia.Value
+                                                  }
+
+
+                                         ).ToList();
+            return ketqua;
+        }
+
+        public List<SachDTO> LayDSDuocChon(List<string> dssach)
+        {
+            List<SachDTO> result = new List<SachDTO>();
+            List<SachDTO> sachDTOs = new List<SachDTO>();
+            sachDTOs = data.Saches.Where(u => u.TrangThai.Value == true).Select(u => new SachDTO
+            {
+                MaSach = u.MaSach,
+                TenSach = u.TenSach,
+                MaDauSach = u.MaDauSach,
+                MaTheLoai = u.DauSach.MaTheLoai,
+                TenTacGia = u.TenTacGia,
+                TenNhaXuatBan = u.TenNhaXuatBan,
+                NamXuatBan = u.NamXuatBan.Value,
+                TrangThai = u.TrangThai.Value,
+                SoLuong = u.SoLuong.Value,
+                SachHiem = u.SachHiem.Value,
+                DonGia = (int)u.DonGia,
+
+            }).ToList();
+
+            foreach (string x in dssach)
+            {
+                foreach(SachDTO s in sachDTOs)
+                {
+                    if (s.TenSach == x)
+                        result.Add(s);
+                }
+            }
+
+
+            return result;
+        }
+
     }
 }

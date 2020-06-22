@@ -14,6 +14,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
     {
         public static int PhanQuyen = -1;
         public static string NameofUser = string.Empty;
+        public static string TaiKhoan = string.Empty;
 
         public frmTrangChu()
         {
@@ -174,6 +175,8 @@ namespace Quản_lý_thư_viện_Tri_Thức
                 frm.Close();
             }
             PhanQuyen = -1;
+            NameofUser = string.Empty;
+            TaiKhoan = string.Empty;
             frmHome_Load(sender, e);
         }
 
@@ -261,6 +264,24 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
             frmNhapSach.MdiParent = this;
             frmNhapSach.Show();
+        }
+
+        private void mToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mượnSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMuonSach frmMuonSach = new frmMuonSach();
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+
+
+            frmMuonSach.MdiParent = this;
+            frmMuonSach.Show();
         }
     }
 }

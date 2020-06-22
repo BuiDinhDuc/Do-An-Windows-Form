@@ -13,7 +13,7 @@ namespace BUS
     {
         NhanVienDAL nhanvienDAL = new NhanVienDAL();
 
-        public bool KtraDangNhap(string username,string password, ref string NameofUser,ref int PhanQuyen,ref string MaNV)
+        public bool KtraDangNhap(string username,string password, ref string NameofUser,ref int PhanQuyen,ref string MaNV,ref string TaiKhoan)
         {
             List<NhanVienDTO> dsNhanVien = new List<NhanVienDTO>();
             dsNhanVien = nhanvienDAL.LayDSNhanVien();
@@ -25,6 +25,7 @@ namespace BUS
                     NameofUser = i.HoTenNV;
                     PhanQuyen = i.Quyen;
                     MaNV = i.MaNV;
+                    TaiKhoan = i.TaiKhoan;
                     return true;
                 }
 
@@ -91,6 +92,17 @@ namespace BUS
         public bool themNhanVien(NhanVienDTO nhanVien)
         {
             return nhanvienDAL.themNhanVien(nhanVien);
+        }
+
+        public bool KiemTraMatKhau(string username, string Pass)
+        {
+            return nhanvienDAL.KiemTraMatKhau(username, GetMD5(Pass));
+        }
+
+        public bool DoiMatKhau(string username,string newpass)
+        {
+            string pass = GetMD5(newpass);
+            return nhanvienDAL.DoiMatKhau(username, pass);
         }
     }
 }

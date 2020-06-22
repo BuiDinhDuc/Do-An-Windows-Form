@@ -54,7 +54,8 @@ namespace DAL
                 nhanVien.TrangThai = false;
                 data.SaveChanges();
                 return true;
-            } catch( Exception)
+            }
+            catch (Exception)
             {
                 return false;
             }
@@ -70,7 +71,8 @@ namespace DAL
                 nhanvien.SDT = nhanvienDTO.SDT;
                 data.SaveChanges();
                 return true;
-            } catch(Exception)
+            }
+            catch (Exception)
             {
                 return false;
             }
@@ -95,7 +97,7 @@ namespace DAL
 
                 return true;
             }
-            catch(Exception)
+            catch (Exception)
             {
                 return false;
             }
@@ -104,6 +106,44 @@ namespace DAL
         public int PhatSinhSo()
         {
             return data.NhanViens.Count() + 1;
+        }
+
+        public bool KiemTraMatKhau(string username, string pass)
+        {
+            try
+            {
+                NhanVien nhanVien = new NhanVien();
+                nhanVien = data.NhanViens.SingleOrDefault(u => u.TaiKhoan == username);
+
+                if (nhanVien.MatKhau == pass)
+                {
+                    return true;
+                }
+                else
+                    return false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+        }
+
+        public bool DoiMatKhau(string username, string newpass)
+        {
+            try
+            {
+                NhanVien nhanVien = data.NhanViens.SingleOrDefault(u => u.TaiKhoan == username);
+
+                nhanVien.MatKhau = newpass;
+
+                data.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }

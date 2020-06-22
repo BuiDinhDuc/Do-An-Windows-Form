@@ -54,6 +54,7 @@
     <Compile Include="CTNhapSachBUS.cs" />
     <Compile Include="DauSachBUS.cs" />
     <Compile Include="DocGiaBUS.cs" />
+    <Compile Include="MuonSachBUS.cs" />
     <Compile Include="NhanVienBUS.cs" />
     <Compile Include="NhapSachBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

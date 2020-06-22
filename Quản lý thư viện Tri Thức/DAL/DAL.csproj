@@ -74,6 +74,7 @@
     <Compile Include="MuonSach.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
+    <Compile Include="MuonSachDAO.cs" />
     <Compile Include="NhanVien.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
