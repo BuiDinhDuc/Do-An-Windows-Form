@@ -45,7 +45,7 @@
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(253, 23);
+            this.txtPassword.Size = new System.Drawing.Size(253, 26);
             this.txtPassword.TabIndex = 8;
             // 
             // txtUsername
@@ -53,7 +53,7 @@
             this.txtUsername.Location = new System.Drawing.Point(288, 93);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(250, 23);
+            this.txtUsername.Size = new System.Drawing.Size(250, 26);
             this.txtUsername.TabIndex = 7;
             // 
             // btnCancel
@@ -85,7 +85,7 @@
             this.lblPassword.Location = new System.Drawing.Point(197, 139);
             this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(78, 20);
+            this.lblPassword.Size = new System.Drawing.Size(98, 25);
             this.lblPassword.TabIndex = 11;
             this.lblPassword.Text = "Password";
             // 
@@ -96,7 +96,7 @@
             this.lblUsername.Location = new System.Drawing.Point(197, 93);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(83, 20);
+            this.lblUsername.Size = new System.Drawing.Size(102, 25);
             this.lblUsername.TabIndex = 9;
             this.lblUsername.Text = "Username";
             // 
@@ -107,7 +107,7 @@
             this.lblTieuDe.Location = new System.Drawing.Point(364, 45);
             this.lblTieuDe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTieuDe.Name = "lblTieuDe";
-            this.lblTieuDe.Size = new System.Drawing.Size(117, 25);
+            this.lblTieuDe.Size = new System.Drawing.Size(145, 29);
             this.lblTieuDe.TabIndex = 5;
             this.lblTieuDe.Text = "Đăng nhập";
             // 
@@ -120,10 +120,10 @@
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
-            // frmLogin
+            // frmDangNhap
             // 
             this.AcceptButton = this.btnDangNhap;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(600, 300);
@@ -138,7 +138,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmLogin";
+            this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

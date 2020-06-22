@@ -32,3 +32,20 @@ D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\o
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.dll
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.pdb
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.dll
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.pdb
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\BUS.dll.config
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\BUS.dll
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\BUS.pdb
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DAL.dll
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DTO.dll
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.dll
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DAL.pdb
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DAL.dll.config
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DTO.pdb
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DTO.dll.config
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.xml
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.csproj.CopyComplete

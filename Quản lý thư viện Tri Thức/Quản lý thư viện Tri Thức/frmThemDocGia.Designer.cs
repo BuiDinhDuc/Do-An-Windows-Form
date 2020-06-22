@@ -49,9 +49,10 @@
             // 
             this.lblTieuDe.AutoSize = true;
             this.lblTieuDe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTieuDe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(70)))), ((int)(((byte)(54)))));
             this.lblTieuDe.Location = new System.Drawing.Point(192, 21);
             this.lblTieuDe.Name = "lblTieuDe";
-            this.lblTieuDe.Size = new System.Drawing.Size(143, 25);
+            this.lblTieuDe.Size = new System.Drawing.Size(179, 29);
             this.lblTieuDe.TabIndex = 0;
             this.lblTieuDe.Text = "Thêm độc giả";
             // 
@@ -88,7 +89,7 @@
             this.lblCMND.AutoSize = true;
             this.lblCMND.Location = new System.Drawing.Point(86, 221);
             this.lblCMND.Name = "lblCMND";
-            this.lblCMND.Size = new System.Drawing.Size(48, 17);
+            this.lblCMND.Size = new System.Drawing.Size(60, 20);
             this.lblCMND.TabIndex = 0;
             this.lblCMND.Text = "CMND";
             // 
@@ -97,7 +98,7 @@
             this.lblDiaChi.AutoSize = true;
             this.lblDiaChi.Location = new System.Drawing.Point(86, 252);
             this.lblDiaChi.Name = "lblDiaChi";
-            this.lblDiaChi.Size = new System.Drawing.Size(51, 17);
+            this.lblDiaChi.Size = new System.Drawing.Size(61, 20);
             this.lblDiaChi.TabIndex = 0;
             this.lblDiaChi.Text = "Địa chỉ";
             // 
@@ -105,14 +106,14 @@
             // 
             this.txtDiaChi.Location = new System.Drawing.Point(185, 249);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(313, 23);
+            this.txtDiaChi.Size = new System.Drawing.Size(313, 26);
             this.txtDiaChi.TabIndex = 4;
             // 
             // txtTenDocGia
             // 
             this.txtTenDocGia.Location = new System.Drawing.Point(185, 146);
             this.txtTenDocGia.Name = "txtTenDocGia";
-            this.txtTenDocGia.Size = new System.Drawing.Size(150, 23);
+            this.txtTenDocGia.Size = new System.Drawing.Size(150, 26);
             this.txtTenDocGia.TabIndex = 1;
             // 
             // lblTenDocGia
@@ -120,7 +121,7 @@
             this.lblTenDocGia.AutoSize = true;
             this.lblTenDocGia.Location = new System.Drawing.Point(86, 149);
             this.lblTenDocGia.Name = "lblTenDocGia";
-            this.lblTenDocGia.Size = new System.Drawing.Size(83, 17);
+            this.lblTenDocGia.Size = new System.Drawing.Size(96, 20);
             this.lblTenDocGia.TabIndex = 0;
             this.lblTenDocGia.Text = "Tên độc giả";
             // 
@@ -128,7 +129,7 @@
             // 
             this.dtmNgayBD.Location = new System.Drawing.Point(185, 183);
             this.dtmNgayBD.Name = "dtmNgayBD";
-            this.dtmNgayBD.Size = new System.Drawing.Size(150, 23);
+            this.dtmNgayBD.Size = new System.Drawing.Size(150, 26);
             this.dtmNgayBD.TabIndex = 2;
             // 
             // txtMaThe
@@ -136,7 +137,7 @@
             this.txtMaThe.Location = new System.Drawing.Point(185, 107);
             this.txtMaThe.Name = "txtMaThe";
             this.txtMaThe.ReadOnly = true;
-            this.txtMaThe.Size = new System.Drawing.Size(150, 23);
+            this.txtMaThe.Size = new System.Drawing.Size(150, 26);
             this.txtMaThe.TabIndex = 0;
             // 
             // txtMaDocGia
@@ -144,7 +145,7 @@
             this.txtMaDocGia.Location = new System.Drawing.Point(185, 71);
             this.txtMaDocGia.Name = "txtMaDocGia";
             this.txtMaDocGia.ReadOnly = true;
-            this.txtMaDocGia.Size = new System.Drawing.Size(150, 23);
+            this.txtMaDocGia.Size = new System.Drawing.Size(150, 26);
             this.txtMaDocGia.TabIndex = 0;
             // 
             // lblNgayBatDau
@@ -152,7 +153,7 @@
             this.lblNgayBatDau.AutoSize = true;
             this.lblNgayBatDau.Location = new System.Drawing.Point(86, 186);
             this.lblNgayBatDau.Name = "lblNgayBatDau";
-            this.lblNgayBatDau.Size = new System.Drawing.Size(93, 17);
+            this.lblNgayBatDau.Size = new System.Drawing.Size(107, 20);
             this.lblNgayBatDau.TabIndex = 0;
             this.lblNgayBatDau.Text = "Ngày bắt đầu";
             // 
@@ -161,7 +162,7 @@
             this.lblMaThe.AutoSize = true;
             this.lblMaThe.Location = new System.Drawing.Point(86, 110);
             this.lblMaThe.Name = "lblMaThe";
-            this.lblMaThe.Size = new System.Drawing.Size(51, 17);
+            this.lblMaThe.Size = new System.Drawing.Size(60, 20);
             this.lblMaThe.TabIndex = 0;
             this.lblMaThe.Text = "Mã thẻ";
             // 
@@ -170,14 +171,15 @@
             this.lblMaDocGia.AutoSize = true;
             this.lblMaDocGia.Location = new System.Drawing.Point(86, 74);
             this.lblMaDocGia.Name = "lblMaDocGia";
-            this.lblMaDocGia.Size = new System.Drawing.Size(77, 17);
+            this.lblMaDocGia.Size = new System.Drawing.Size(91, 20);
             this.lblMaDocGia.TabIndex = 0;
             this.lblMaDocGia.Text = "Mã độc giả";
             // 
             // frmThemDocGia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(589, 371);
             this.Controls.Add(this.lblTieuDe);
             this.Controls.Add(this.btnCancel);

@@ -35,6 +35,7 @@
             this.btnChoMuon = new System.Windows.Forms.Button();
             this.lstSachMuon = new System.Windows.Forms.ListView();
             this.colTenSach = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colSL = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnLapHoaDon = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.nudSoLuong = new System.Windows.Forms.NumericUpDown();
-            this.colSL = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,7 +70,7 @@
             // 
             this.txtTimKiem.Location = new System.Drawing.Point(72, 157);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(279, 23);
+            this.txtTimKiem.Size = new System.Drawing.Size(279, 26);
             this.txtTimKiem.TabIndex = 24;
             // 
             // btnTraLai
@@ -111,6 +111,11 @@
             this.colTenSach.Text = "Tên Sách";
             this.colTenSach.Width = 350;
             // 
+            // colSL
+            // 
+            this.colSL.Text = "Số lượng";
+            this.colSL.Width = 80;
+            // 
             // btnTimKiem
             // 
             this.btnTimKiem.Location = new System.Drawing.Point(400, 152);
@@ -145,7 +150,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(72, 208);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 17);
+            this.label4.Size = new System.Drawing.Size(187, 20);
             this.label4.TabIndex = 36;
             this.label4.Text = "Sách Có Thể Cho Mượn";
             // 
@@ -154,7 +159,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(797, 194);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 17);
+            this.label5.Size = new System.Drawing.Size(116, 20);
             this.label5.TabIndex = 37;
             this.label5.Text = "Sách sẽ mượn";
             // 
@@ -163,7 +168,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(494, 238);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 17);
+            this.label6.Size = new System.Drawing.Size(74, 20);
             this.label6.TabIndex = 38;
             this.label6.Text = "Số lượng";
             // 
@@ -171,10 +176,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(70)))), ((int)(((byte)(54)))));
             this.label1.Location = new System.Drawing.Point(439, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(290, 63);
+            this.label1.Size = new System.Drawing.Size(360, 76);
             this.label1.TabIndex = 39;
             this.label1.Text = "Mượn sách";
             // 
@@ -187,7 +192,7 @@
             0,
             0});
             this.nudSoLuong.Name = "nudSoLuong";
-            this.nudSoLuong.Size = new System.Drawing.Size(47, 23);
+            this.nudSoLuong.Size = new System.Drawing.Size(47, 26);
             this.nudSoLuong.TabIndex = 40;
             this.nudSoLuong.Value = new decimal(new int[] {
             1,
@@ -195,15 +200,11 @@
             0,
             0});
             // 
-            // colSL
-            // 
-            this.colSL.Text = "Số lượng";
-            this.colSL.Width = 80;
-            // 
             // frmMuonSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(201)))));
             this.ClientSize = new System.Drawing.Size(1170, 600);
             this.Controls.Add(this.nudSoLuong);
             this.Controls.Add(this.label1);

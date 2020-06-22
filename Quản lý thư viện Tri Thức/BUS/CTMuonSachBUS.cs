@@ -10,10 +10,10 @@ namespace BUS
 {
     public class CTMuonSachBUS
     {
-        CT
-        public bool ThemCTMuonSach(List<CTMuonSachDTO> lstCTMuon)
-        {
-            return 
-        }
+        //CT
+        //public bool ThemCTMuonSach(List<CTMuonSachDTO> lstCTMuon)
+        //{
+        //    return 
+        //}
     }
 }

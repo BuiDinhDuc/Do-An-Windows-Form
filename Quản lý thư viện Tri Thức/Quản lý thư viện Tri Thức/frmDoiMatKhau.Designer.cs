@@ -71,7 +71,7 @@
             this.txtReNewPassword.Location = new System.Drawing.Point(301, 160);
             this.txtReNewPassword.Name = "txtReNewPassword";
             this.txtReNewPassword.PasswordChar = '*';
-            this.txtReNewPassword.Size = new System.Drawing.Size(250, 23);
+            this.txtReNewPassword.Size = new System.Drawing.Size(250, 26);
             this.txtReNewPassword.TabIndex = 13;
             // 
             // txtNewPassword
@@ -79,7 +79,7 @@
             this.txtNewPassword.Location = new System.Drawing.Point(301, 114);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.PasswordChar = '*';
-            this.txtNewPassword.Size = new System.Drawing.Size(250, 23);
+            this.txtNewPassword.Size = new System.Drawing.Size(250, 26);
             this.txtNewPassword.TabIndex = 12;
             // 
             // txtPassword
@@ -87,7 +87,7 @@
             this.txtPassword.Location = new System.Drawing.Point(301, 69);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(250, 23);
+            this.txtPassword.Size = new System.Drawing.Size(250, 26);
             this.txtPassword.TabIndex = 11;
             // 
             // label5
@@ -104,7 +104,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(184, 117);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 17);
+            this.label4.Size = new System.Drawing.Size(109, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "Mật khẩu mới";
             // 
@@ -113,7 +113,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(184, 72);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 17);
+            this.label3.Size = new System.Drawing.Size(136, 20);
             this.label3.TabIndex = 9;
             this.label3.Text = "Mật khẩu hiện tại";
             // 
@@ -123,15 +123,16 @@
             this.lblTieuDe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTieuDe.Location = new System.Drawing.Point(326, 26);
             this.lblTieuDe.Name = "lblTieuDe";
-            this.lblTieuDe.Size = new System.Drawing.Size(138, 25);
+            this.lblTieuDe.Size = new System.Drawing.Size(175, 29);
             this.lblTieuDe.TabIndex = 10;
             this.lblTieuDe.Text = "Đổi mật khẩu";
             // 
             // frmDoiMatKhau
             // 
             this.AcceptButton = this.btnXacNhan;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.BurlyWood;
             this.ClientSize = new System.Drawing.Size(600, 300);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnXacNhan);

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.toTSua = new System.Windows.Forms.ToolTip(this.components);
             this.btnSua = new System.Windows.Forms.Button();
@@ -114,7 +114,7 @@
             // 
             this.txtCMND.Location = new System.Drawing.Point(134, 150);
             this.txtCMND.Name = "txtCMND";
-            this.txtCMND.Size = new System.Drawing.Size(226, 23);
+            this.txtCMND.Size = new System.Drawing.Size(226, 26);
             this.txtCMND.TabIndex = 37;
             // 
             // label6
@@ -122,7 +122,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(21, 153);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 17);
+            this.label6.Size = new System.Drawing.Size(60, 20);
             this.label6.TabIndex = 36;
             this.label6.Text = "CMND";
             // 
@@ -141,7 +141,7 @@
             // dataDocGia
             // 
             this.dataDocGia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataDocGia.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataDocGia.BackgroundColor = System.Drawing.Color.Silver;
             this.dataDocGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataDocGia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaDocGia,
@@ -149,25 +149,26 @@
             this.CMND,
             this.DiaChi,
             this.SoThe});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataDocGia.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataDocGia.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataDocGia.Location = new System.Drawing.Point(0, 198);
             this.dataDocGia.Name = "dataDocGia";
             this.dataDocGia.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataDocGia.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataDocGia.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataDocGia.RowHeadersWidth = 51;
             this.dataDocGia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataDocGia.Size = new System.Drawing.Size(750, 351);
             this.dataDocGia.TabIndex = 31;
@@ -177,6 +178,7 @@
             // 
             this.MaDocGia.DataPropertyName = "MaDocGia";
             this.MaDocGia.HeaderText = "Mã Độc Giả";
+            this.MaDocGia.MinimumWidth = 6;
             this.MaDocGia.Name = "MaDocGia";
             this.MaDocGia.ReadOnly = true;
             // 
@@ -184,6 +186,7 @@
             // 
             this.TenDocGia.DataPropertyName = "TenDocGia";
             this.TenDocGia.HeaderText = "Tên Độc Giả";
+            this.TenDocGia.MinimumWidth = 6;
             this.TenDocGia.Name = "TenDocGia";
             this.TenDocGia.ReadOnly = true;
             // 
@@ -191,6 +194,7 @@
             // 
             this.CMND.DataPropertyName = "CMND";
             this.CMND.HeaderText = "CMND";
+            this.CMND.MinimumWidth = 6;
             this.CMND.Name = "CMND";
             this.CMND.ReadOnly = true;
             // 
@@ -198,6 +202,7 @@
             // 
             this.DiaChi.DataPropertyName = "DiaChi";
             this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.MinimumWidth = 6;
             this.DiaChi.Name = "DiaChi";
             this.DiaChi.ReadOnly = true;
             // 
@@ -205,6 +210,7 @@
             // 
             this.SoThe.DataPropertyName = "SoThe";
             this.SoThe.HeaderText = "Số Thẻ";
+            this.SoThe.MinimumWidth = 6;
             this.SoThe.Name = "SoThe";
             this.SoThe.ReadOnly = true;
             // 
@@ -213,7 +219,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(21, 194);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 17);
+            this.label5.Size = new System.Drawing.Size(61, 20);
             this.label5.TabIndex = 30;
             this.label5.Text = "Địa chỉ";
             // 
@@ -221,7 +227,7 @@
             // 
             this.txtTenDocGia.Location = new System.Drawing.Point(134, 90);
             this.txtTenDocGia.Name = "txtTenDocGia";
-            this.txtTenDocGia.Size = new System.Drawing.Size(226, 23);
+            this.txtTenDocGia.Size = new System.Drawing.Size(226, 26);
             this.txtTenDocGia.TabIndex = 28;
             // 
             // label4
@@ -229,7 +235,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(21, 93);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 17);
+            this.label4.Size = new System.Drawing.Size(96, 20);
             this.label4.TabIndex = 27;
             this.label4.Text = "Tên độc giả";
             // 
@@ -237,7 +243,7 @@
             // 
             this.dtmNgayBD.Location = new System.Drawing.Point(134, 120);
             this.dtmNgayBD.Name = "dtmNgayBD";
-            this.dtmNgayBD.Size = new System.Drawing.Size(226, 23);
+            this.dtmNgayBD.Size = new System.Drawing.Size(226, 26);
             this.dtmNgayBD.TabIndex = 26;
             // 
             // txtMaThe
@@ -245,7 +251,7 @@
             this.txtMaThe.Location = new System.Drawing.Point(134, 60);
             this.txtMaThe.Name = "txtMaThe";
             this.txtMaThe.ReadOnly = true;
-            this.txtMaThe.Size = new System.Drawing.Size(226, 23);
+            this.txtMaThe.Size = new System.Drawing.Size(226, 26);
             this.txtMaThe.TabIndex = 25;
             // 
             // txtMaDocGia
@@ -253,7 +259,7 @@
             this.txtMaDocGia.Location = new System.Drawing.Point(134, 30);
             this.txtMaDocGia.Name = "txtMaDocGia";
             this.txtMaDocGia.ReadOnly = true;
-            this.txtMaDocGia.Size = new System.Drawing.Size(226, 23);
+            this.txtMaDocGia.Size = new System.Drawing.Size(226, 26);
             this.txtMaDocGia.TabIndex = 24;
             // 
             // label3
@@ -261,7 +267,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(21, 125);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 17);
+            this.label3.Size = new System.Drawing.Size(107, 20);
             this.label3.TabIndex = 23;
             this.label3.Text = "Ngày bắt đầu";
             // 
@@ -270,7 +276,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(21, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 17);
+            this.label2.Size = new System.Drawing.Size(60, 20);
             this.label2.TabIndex = 22;
             this.label2.Text = "Mã thẻ";
             // 
@@ -279,7 +285,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(21, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 17);
+            this.label1.Size = new System.Drawing.Size(91, 20);
             this.label1.TabIndex = 21;
             this.label1.Text = "Mã độc giả";
             // 
@@ -287,10 +293,10 @@
             // 
             this.lblTieuDe.AutoSize = true;
             this.lblTieuDe.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTieuDe.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblTieuDe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(70)))), ((int)(((byte)(54)))));
             this.lblTieuDe.Location = new System.Drawing.Point(261, 24);
             this.lblTieuDe.Name = "lblTieuDe";
-            this.lblTieuDe.Size = new System.Drawing.Size(489, 63);
+            this.lblTieuDe.Size = new System.Drawing.Size(601, 76);
             this.lblTieuDe.TabIndex = 20;
             this.lblTieuDe.Text = "Danh sách độc giả";
             // 
@@ -330,8 +336,9 @@
             // 
             // frmDocGia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(201)))));
             this.ClientSize = new System.Drawing.Size(1170, 600);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);

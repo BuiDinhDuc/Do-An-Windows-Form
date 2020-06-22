@@ -26,3 +26,17 @@ D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\b
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.dll
 D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.pdb
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\DAL.dll.config
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\DAL.dll
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\DAL.pdb
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\DTO.dll
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\EntityFramework.dll
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\DTO.pdb
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\DTO.dll.config
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\EntityFramework.xml
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.dll
+C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.pdb
