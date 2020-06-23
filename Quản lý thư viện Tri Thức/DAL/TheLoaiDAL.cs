@@ -51,5 +51,32 @@ namespace DAL
             return theLoaiDTO;
 
         }
+
+        public int DemSo()
+        {
+            return data.TheLoais.Count() + 1;
+        }
+
+        public bool ThemTheLoai(TheLoaiDTO theLoaiDTO)
+        {
+            try
+            {
+                TheLoai theLoai = new TheLoai
+                {
+                    MaTheLoai = theLoaiDTO.MaTheLoai,
+                    TenTheLoai = theLoaiDTO.TenTheLoai,
+                    TrangThai = true,
+                };
+
+                data.TheLoais.Add(theLoai);
+                data.SaveChanges();
+
+                return true;
+            }
+            catch(Exception)
+            {
+                return false;
+            }
+        }
     }
 }

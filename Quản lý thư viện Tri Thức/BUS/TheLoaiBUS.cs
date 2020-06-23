@@ -26,5 +26,29 @@ namespace BUS
         {
             return theloaiDAL.timTheLoaitheoten(TenTheLoai);
         }
+
+        public string PhatSinhMa()
+        {
+            string Ma = "TL";
+            int so = theloaiDAL.DemSo();
+
+            int idem = 0;
+            foreach (char i in so.ToString())
+            {
+                idem++;
+            }
+
+            for (int j = 0; j < 8 - idem; j++)
+            {
+                Ma += "0";
+            }
+
+            return Ma + so.ToString();
+        }
+
+        public bool themTheLoai(TheLoaiDTO theLoaiDTO)
+        {
+            return theloaiDAL.ThemTheLoai(theLoaiDTO);
+        }
     }
 }

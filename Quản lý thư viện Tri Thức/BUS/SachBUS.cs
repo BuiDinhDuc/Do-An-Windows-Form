@@ -19,9 +19,9 @@ namespace BUS
             return sachDAL.LayDSSach();      
         }
 
-        public void DeleteBooks(string MaSach)
+        public bool DeleteBooks(string MaSach)
         {
-            sachDAL.DeleteBooks(MaSach);
+           return sachDAL.DeleteBooks(MaSach);
         }
 
         public SachDTO timSach(string MaSach)
@@ -29,9 +29,9 @@ namespace BUS
             return sachDAL.timSach(MaSach);
         }
 
-        public void Editbook(SachDTO sach)
+        public bool Editbook(SachDTO sach)
         {
-            sachDAL.EditBook(sach);
+           return sachDAL.EditBook(sach);
         }
 
         public List<SachDTO> SearchBook(string tieuchi)

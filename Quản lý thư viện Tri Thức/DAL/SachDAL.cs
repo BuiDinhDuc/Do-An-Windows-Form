@@ -34,11 +34,19 @@ namespace DAL
         }
 
         //------------------------------
-       public void DeleteBooks(string MaSach)
+       public bool DeleteBooks(string MaSach)
         {
-            Sach s = data.Saches.SingleOrDefault(u => u.MaSach == MaSach && u.TrangThai.Value == true);
-            s.TrangThai = false;
-            data.SaveChanges();
+            try
+            {
+                Sach s = data.Saches.SingleOrDefault(u => u.MaSach == MaSach && u.TrangThai.Value == true);
+                s.TrangThai = false;
+                data.SaveChanges();
+                return true;
+            }
+            catch(Exception)
+            {
+                return false;
+            }
                     
         }
 
@@ -64,21 +72,29 @@ namespace DAL
             return result;
         }
 
-        public void EditBook(SachDTO sach)
+        public bool EditBook(SachDTO sach)
         {
-            Sach s = data.Saches.SingleOrDefault(u => u.MaSach == sach.MaSach && u.TrangThai.Value == true);
+            try
+            {
+                Sach s = data.Saches.SingleOrDefault(u => u.MaSach == sach.MaSach && u.TrangThai.Value == true);
 
 
-            s.TenSach = sach.TenSach;
-            s.MaDauSach = sach.MaDauSach;          
-            s.TenTacGia = sach.TenTacGia;
-            s.TenNhaXuatBan = sach.TenNhaXuatBan;
-            s.NamXuatBan = sach.NamXuatBan;
-            s.SoLuong = sach.SoLuong;
-            s.SachHiem = sach.SachHiem;
-            s.DonGia = sach.DonGia;  
+                s.TenSach = sach.TenSach;
+                s.MaDauSach = sach.MaDauSach;
+                s.TenTacGia = sach.TenTacGia;
+                s.TenNhaXuatBan = sach.TenNhaXuatBan;
+                s.NamXuatBan = sach.NamXuatBan;
+                s.SoLuong = sach.SoLuong;
+                s.SachHiem = sach.SachHiem;
+                s.DonGia = sach.DonGia;
 
-            data.SaveChanges();
+                data.SaveChanges();
+
+                return true;
+            } catch(Exception)
+            {
+                return false;
+            }
 
         }
 

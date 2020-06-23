@@ -113,3 +113,43 @@ C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Qu�
 C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.pdb
 C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.exe.config
 C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\Quản lý thư viện Tri Thức.exe.config
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\Quản lý thư viện Tri Thức.exe
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\Quản lý thư viện Tri Thức.pdb
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\BUS.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\DTO.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\EntityFramework.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\EntityFramework.SqlServer.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\DAL.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\BUS.pdb
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\DTO.pdb
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\EntityFramework.xml
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\EntityFramework.SqlServer.xml
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\bin\Debug\DAL.pdb
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmChonXemThongKe.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmLapHoaDon.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmNhapSach.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmThemNhanVien.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmThemDocGia.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmSach.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmMuonSach.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmDoiMatKhau.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmTrangChu.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmQuyDinh.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmNhanVien.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmDangNhap.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmDocGia.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmTimSach.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.Properties.Resources.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.csproj.GenerateResource.cache
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.exe
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.pdb
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmThemDauSach.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmThemTheLoai.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.csprojResolveAssemblyReference.cache
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản lý thư viện Tri Thức.csproj.Quản lý thư viện Tri Thức.exe.config
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\Quản_lý_thư_viện_Tri_Thức.frmXemBaoCao.resources
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\RdlCompile.cache
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\Quản lý thư viện Tri Thức\obj\Debug\RdlCompile.compiled

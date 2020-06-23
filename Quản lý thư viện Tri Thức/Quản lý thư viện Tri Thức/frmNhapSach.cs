@@ -65,7 +65,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
             txtSach.Text = string.Empty;
             txtSoLuong.Text = string.Empty;
             txtTacGia.Text = string.Empty;
-          
+            label6.Text = "Số lượng";
             
             chkSachHiem.Checked = false;
 

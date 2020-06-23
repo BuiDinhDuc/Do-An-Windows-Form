@@ -29,5 +29,32 @@ namespace DAL
             DauSach dauSach = data.DauSaches.SingleOrDefault(u => u.MaDauSach == MaDauSach );
             return dauSach.MaTheLoai;
         }
+
+        public int demso ()
+        {
+            return data.DauSaches.Count() + 1;
+        }
+
+        public bool ThemDauSach(DauSachDTO dauSachDTO)
+        {
+            try
+            {
+                DauSach dauSach = new DauSach
+                {
+                    MaDauSach = dauSachDTO.MaDauSach,
+                    TenDauSach = dauSachDTO.TenDauSach,
+                    MaTheLoai = dauSachDTO.MaTheLoai,
+                    TrangThai = true
+                };
+                data.DauSaches.Add(dauSach);
+                data.SaveChanges();
+
+                return true;
+            }
+            catch(Exception)
+            {
+                return false;
+            }
+        }
     }
 }

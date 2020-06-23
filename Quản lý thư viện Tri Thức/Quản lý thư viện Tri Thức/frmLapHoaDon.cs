@@ -31,7 +31,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
                 item.Text = s.TenSach;
                 item.SubItems.Add(s.TenTacGia);
-                double tien = (double)s.DonGia * 0.2 * frmMuonSach.soluong[idem];
+                double tien = (double)s.DonGia * frmMuonSach.soluong[idem];
                 int soLuong = s.SoLuong;
                 item.SubItems.Add(frmMuonSach.soluong[idem].ToString());
                 item.SubItems.Add(s.DonGia.ToString());

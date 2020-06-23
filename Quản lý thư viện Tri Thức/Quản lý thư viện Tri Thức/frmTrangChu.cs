@@ -283,5 +283,31 @@ namespace Quản_lý_thư_viện_Tri_Thức
             frmMuonSach.MdiParent = this;
             frmMuonSach.Show();
         }
+
+        private void thêmĐầuSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmThemDauSach frmThemDauSach = new frmThemDauSach();
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+
+
+            frmThemDauSach.MdiParent = this;
+            frmThemDauSach.Show();
+        }
+
+        private void toolThongKe_Click(object sender, EventArgs e)
+        {
+            frmChonXemThongKe frmXem = new frmChonXemThongKe();
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+
+
+            frmXem.MdiParent = this;
+            frmXem.Show();
+        }
     }
 }
