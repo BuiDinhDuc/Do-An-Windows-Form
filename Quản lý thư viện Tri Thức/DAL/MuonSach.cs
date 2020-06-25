@@ -27,7 +27,6 @@ namespace DAL
         public Nullable<System.DateTime> NgayMuon { get; set; }
         public Nullable<System.DateTime> NgayPhaiTra { get; set; }
         public Nullable<bool> TrangThai { get; set; }
-        public Nullable<int> TienCoc { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTMuonSach> CTMuonSaches { get; set; }

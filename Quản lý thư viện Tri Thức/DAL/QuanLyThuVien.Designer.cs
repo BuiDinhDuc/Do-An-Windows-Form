@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\Do An Windows Form\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\QuanLyThuVien.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\QuanLyThuVien.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

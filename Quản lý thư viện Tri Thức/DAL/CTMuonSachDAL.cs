@@ -9,25 +9,32 @@ namespace DAL
 {
     public class CTMuonSachDAL
     {
-        QuanLyThuVienEntities quanLyThuVienEntities = new QuanLyThuVienEntities();
+        QuanLyThuVienEntities data = new QuanLyThuVienEntities();
         
         
         public bool ThemCTMuonSach(List<CTMuonSachDTO> lstCTMuon)
         {
-            // MA code
+         
             try
             {
-                foreach (CTMuonSachDTO ctMuon in lstCTMuon)
+                foreach(CTMuonSachDTO ct in lstCTMuon)
                 {
-                    CTMuonSach cTMuonSach = new CTMuonSach();
-                    cTMuonSach.MaMuon = ctMuon.MaMuon;
-                    cTMuonSach.MaSach = ctMuon.MaSach;
-                    cTMuonSach.SoLuong = ctMuon.SoLuong;
-                    cTMuonSach.TrangThai = true;
+                    CTMuonSach cT = new CTMuonSach { 
+                    
+                    MaMuon = ct.MaMuon,
+                    MaSach = ct.MaSach,
+                    SoLuong = ct.SoLuong,
+                    TrangThai = ct.TrangThai,
+                    GiaSach = 0
+                   
+                    };
 
-                    quanLyThuVienEntities.CTMuonSaches.Add(cTMuonSach);
-                    quanLyThuVienEntities.SaveChanges();
+                    data.CTMuonSaches.Add(cT);
+          
                 }
+                data.SaveChanges();
+
+
                 return true;
             }
             catch(Exception)

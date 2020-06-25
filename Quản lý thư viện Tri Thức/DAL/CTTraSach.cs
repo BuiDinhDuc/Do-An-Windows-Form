@@ -18,7 +18,6 @@ namespace DAL
         public string MaSach { get; set; }
         public Nullable<System.DateTime> NgayTra { get; set; }
         public Nullable<int> SoLuong { get; set; }
-        public Nullable<decimal> TienThue { get; set; }
         public Nullable<decimal> TienPhat { get; set; }
         public Nullable<bool> TrangThai { get; set; }
     

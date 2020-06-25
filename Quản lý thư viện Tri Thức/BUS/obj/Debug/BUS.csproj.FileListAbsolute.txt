@@ -49,3 +49,20 @@ C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\
 C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.xml
 C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\BUS.dll.config
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\BUS.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\BUS.pdb
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DAL.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DTO.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.SqlServer.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DAL.pdb
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DAL.dll.config
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DTO.pdb
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\DTO.dll.config
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.xml
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\bin\Debug\EntityFramework.SqlServer.xml
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\BUS\obj\Debug\BUS.pdb

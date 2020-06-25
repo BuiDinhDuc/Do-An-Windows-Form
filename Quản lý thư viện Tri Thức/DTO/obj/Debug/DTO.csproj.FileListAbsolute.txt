@@ -31,3 +31,14 @@ C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\
 C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.csproj.CopyComplete
 C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.dll
 C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.pdb
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\bin\Debug\DTO.dll.config
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\bin\Debug\DTO.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\bin\Debug\DTO.pdb
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\bin\Debug\EntityFramework.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\bin\Debug\EntityFramework.SqlServer.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\bin\Debug\EntityFramework.xml
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\bin\Debug\EntityFramework.SqlServer.xml
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.pdb
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DTO\obj\Debug\DTO.csprojAssemblyReference.cache

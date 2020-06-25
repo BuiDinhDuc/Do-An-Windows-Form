@@ -40,4 +40,17 @@ C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\
 C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.dll
 C:\Users\huyen\Desktop\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.pdb
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\DAL.dll.config
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\DAL.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\DAL.pdb
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\DTO.dll
 D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\EntityFramework.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\DTO.pdb
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\DTO.dll.config
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\EntityFramework.xml
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.dll
+D:\Quan Trong\Do-An-Windows-Form\Quản lý thư viện Tri Thức\DAL\obj\Debug\DAL.pdb

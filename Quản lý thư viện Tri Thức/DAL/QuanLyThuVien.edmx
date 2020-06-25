@@ -36,7 +36,6 @@
           <Property Name="MaSach" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="NgayTra" Type="date" />
           <Property Name="SoLuong" Type="int" />
-          <Property Name="TienThue" Type="money" />
           <Property Name="TienPhat" Type="money" />
           <Property Name="TrangThai" Type="bit" />
         </EntityType>
@@ -70,7 +69,6 @@
           <Property Name="NgayMuon" Type="date" />
           <Property Name="NgayPhaiTra" Type="date" />
           <Property Name="TrangThai" Type="bit" />
-          <Property Name="TienCoc" Type="int" />
         </EntityType>
         <EntityType Name="NhanVien">
           <Key>
@@ -407,7 +405,6 @@
           <Property Name="MaSach" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="NgayTra" Type="DateTime" Precision="0" />
           <Property Name="SoLuong" Type="Int32" />
-          <Property Name="TienThue" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="TienPhat" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="TrangThai" Type="Boolean" />
           <NavigationProperty Name="Sach" Relationship="Self.fk_CTTraSach_Sach" FromRole="CTTraSach" ToRole="Sach" />
@@ -450,7 +447,6 @@
           <NavigationProperty Name="NhanVien" Relationship="Self.fk_MuonSach_NhanVien" FromRole="MuonSach" ToRole="NhanVien" />
           <NavigationProperty Name="TheThuVien" Relationship="Self.fk_MuonSach_TheThuVien" FromRole="MuonSach" ToRole="TheThuVien" />
           <NavigationProperty Name="TraSaches" Relationship="Self.fk_TraSach_MuonSach" FromRole="MuonSach" ToRole="TraSach" />
-          <Property Name="TienCoc" Type="Int32" />
         </EntityType>
         <EntityType Name="NhanVien">
           <Key>
@@ -796,7 +792,6 @@
                 <ScalarProperty Name="MaSach" ColumnName="MaSach" />
                 <ScalarProperty Name="NgayTra" ColumnName="NgayTra" />
                 <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
-                <ScalarProperty Name="TienThue" ColumnName="TienThue" />
                 <ScalarProperty Name="TienPhat" ColumnName="TienPhat" />
                 <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
               </MappingFragment>
@@ -827,7 +822,6 @@
           <EntitySetMapping Name="MuonSaches">
             <EntityTypeMapping TypeName="QuanLyThuVienModel.MuonSach">
               <MappingFragment StoreEntitySet="MuonSach">
-                <ScalarProperty Name="TienCoc" ColumnName="TienCoc" />
                 <ScalarProperty Name="MaMuon" ColumnName="MaMuon" />
                 <ScalarProperty Name="SoThe" ColumnName="SoThe" />
                 <ScalarProperty Name="MaNV" ColumnName="MaNV" />

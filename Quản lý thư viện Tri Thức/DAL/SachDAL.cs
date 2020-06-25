@@ -200,11 +200,11 @@ namespace DAL
             return ketqua;
         }
 
-        public List<SachDTO> LayDSDuocChon(List<string> dssach)
+        public SachDTO LayDSDuocChon(string dssach)
         {
-            List<SachDTO> result = new List<SachDTO>();
-            List<SachDTO> sachDTOs = new List<SachDTO>();
-            sachDTOs = data.Saches.Where(u => u.TrangThai.Value == true).Select(u => new SachDTO
+            SachDTO result = new SachDTO();
+
+            result = data.Saches.Where(u => u.TrangThai.Value == true && u.MaSach == dssach).Select(u => new SachDTO
             {
                 MaSach = u.MaSach,
                 TenSach = u.TenSach,
@@ -218,17 +218,7 @@ namespace DAL
                 SachHiem = u.SachHiem.Value,
                 DonGia = (int)u.DonGia,
 
-            }).ToList();
-
-            foreach (string x in dssach)
-            {
-                foreach(SachDTO s in sachDTOs)
-                {
-                    if (s.TenSach == x)
-                        result.Add(s);
-                }
-            }
-
+            }).SingleOrDefault();
 
             return result;
         }

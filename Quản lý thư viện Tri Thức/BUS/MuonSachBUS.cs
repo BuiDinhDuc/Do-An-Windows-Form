@@ -22,7 +22,7 @@ namespace BUS
                 idem++;
             }
 
-            for (int j = 0; j < 8 - idem; j++)
+            for (int j = 0; j < 7 - idem; j++)
             {
                 Ma += "0";
             }

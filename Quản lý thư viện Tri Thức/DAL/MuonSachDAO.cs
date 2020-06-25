@@ -23,9 +23,9 @@ namespace DAL
                 muonSach.SoThe = muonSachDTO.SoThe;
                 muonSach.MaNV = muonSachDTO.MaNV;
                 muonSach.NgayMuon = muonSachDTO.NgayMuon;
-                muonSach.NgayPhaiTra = muonSach.NgayPhaiTra;
+                muonSach.NgayPhaiTra = muonSachDTO.NgayPhaiTra;
                 muonSach.TrangThai = true;
-                muonSach.TienCoc = muonSachDTO.TienCoc;
+               
 
                 data.MuonSaches.Add(muonSach);
 
@@ -37,5 +37,6 @@ namespace DAL
                 return false;
             }
         }
+      
     }
 }

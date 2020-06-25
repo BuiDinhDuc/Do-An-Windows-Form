@@ -59,6 +59,7 @@
     <Compile Include="DauSachDTO.cs" />
     <Compile Include="DocGiaDTO.cs" />
     <Compile Include="MuonSachDTO.cs" />
+    <Compile Include="MuonSachTamDTO.cs" />
     <Compile Include="NhanVienDTO.cs" />
     <Compile Include="NhapSachDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
